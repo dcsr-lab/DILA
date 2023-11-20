@@ -9,15 +9,15 @@
 >
 > :man:：`Jackson Dean`	:timer_clock: ：`2022-02-04`  :pencil2:：`c/c++/java/python`  :gear:：[`Github`](https://github.com/JackFroster/JF-Notes)  :information_source:: [`LeetCode`](https://leetcode.cn/)  
 
-# 第四部分
+# 第四部分之树
 
-### 1、树
+
 
 <img src="https://raw.githubusercontent.com/JackFroster/Images/main/image/202208181220550.png" alt="image.png" width="600px" />
 
-#### （I）前序遍历
+### 1、前序遍历
 
-###### （1）589. N 叉树的前序遍历
+#### （1）589. N 叉树的前序遍历
 
 **问题**：
 
@@ -69,7 +69,7 @@ class Solution {
 }
 ```
 
-###### （2）144. 二叉树的前序遍历
+#### （2）144. 二叉树的前序遍历
 
 给你二叉树的根节点 `root` ，返回它节点值的 **前序** 遍历
 
@@ -91,9 +91,9 @@ class Solution {
 }
 ```
 
-#### （II）中序遍历
+### 2、中序遍历
 
-###### （1）285. 二叉搜索树中的中序后继
+#### （1）285. 二叉搜索树中的中序后继
 
 **问题**：
 
@@ -138,9 +138,9 @@ class Solution:
 
 ##### 
 
-#### （III）后序遍历
+### 3、后序遍历
 
-###### （1）590. N 叉树的后序遍历
+#### （1）590. N 叉树的后序遍历
 
 **问题**：
 
@@ -194,7 +194,7 @@ class Solution {
 }
 ```
 
-###### （2）145. 二叉树的后序遍历
+#### （2）145. 二叉树的后序遍历
 
 给你一棵二叉树的根节点 `root` ，返回其节点值的 **后序遍历** 。
 
@@ -217,9 +217,9 @@ class Solution {
 }
 ```
 
-#### （IV）层序遍历
+### 4、层序遍历
 
-###### （1）1302. 层数最深叶子节点的和
+#### （1）1302. 层数最深叶子节点的和
 
 **问题**
 
@@ -276,7 +276,7 @@ class Solution {
 }
 ```
 
-###### （2）637. 二叉树的层平均值
+#### （2）637. 二叉树的层平均值
 
 **问题**
 
@@ -316,7 +316,7 @@ class Solution {
 }
 ```
 
-###### （3）102. 二叉树的层序遍历
+#### （3）102. 二叉树的层序遍历
 
 **问题**
 
@@ -361,7 +361,7 @@ class Solution {
 }
 ```
 
-###### （4）107. 二叉树的层序遍历 II
+#### （4）107. 二叉树的层序遍历 II
 
 **问题**
 
@@ -406,7 +406,7 @@ class Solution {
 }
 ```
 
-###### （5）429. N 叉树的层序遍历
+#### （5）429. N 叉树的层序遍历
 
 给定一个 `N` 叉树，返回其节点值的*层序遍历*。（即从左到右，逐层遍历）。
 
@@ -449,7 +449,7 @@ class Solution {
 }
 ```
 
-###### （6）[T 秒后青蛙的位置](https://leetcode.cn/problems/frog-position-after-t-seconds/)
+#### （6）[T 秒后青蛙的位置](https://leetcode.cn/problems/frog-position-after-t-seconds/)
 
 **问题**：
 
@@ -548,9 +548,9 @@ class Solution {
 
 
 
-#### （V）二叉树的构建与修改
+### 5、二叉树的构建与修改
 
-###### （1）6018. 根据描述创建二叉树
+#### （1）6018. 根据描述创建二叉树
 
 **问题**：
 
@@ -625,7 +625,7 @@ class Solution {
 }
 ```
 
-###### （2）889. 根据前序和后序遍历构造二叉树:writing_hand:  
+#### （2）889. 根据前序和后序遍历构造二叉树:writing_hand:  
 
 **问题**
 
@@ -714,7 +714,7 @@ class Solution {
 }
 ```
 
-###### （3）654. 最大二叉树
+#### （3）654. 最大二叉树
 
 **问题**
 
@@ -771,7 +771,7 @@ class Solution {
 }
 ```
 
-###### （4）[1110. 删点成林](https://leetcode.cn/problems/delete-nodes-and-return-forest/)
+#### （4）[1110. 删点成林](https://leetcode.cn/problems/delete-nodes-and-return-forest/)
 
 **问题**：
 
@@ -861,9 +861,9 @@ class Solution {
 
 
 
-#### （VI）二叉搜索树的构建与修改
+### 6、二叉搜索树的构建与修改
 
-###### （1）1008. 前序遍历构造二叉搜索树
+#### （1）1008. 前序遍历构造二叉搜索树
 
 **问题**
 
@@ -925,7 +925,7 @@ class Solution {
 }
 ```
 
-###### （2）538. 把二叉搜索树转换为累加树
+#### （2）538. 把二叉搜索树转换为累加树
 
 **问题**
 
@@ -965,9 +965,9 @@ class Solution {
 
 
 
-#### （VII）二叉树的属性
+### 7、二叉树的属性
 
-###### （1）222. 完全二叉树的节点个数
+#### （1）222. 完全二叉树的节点个数
 
 **问题**
 
@@ -1024,7 +1024,7 @@ class Solution {
 }
 ```
 
-###### （2）366. 寻找二叉树的叶子节点
+#### （2）366. 寻找二叉树的叶子节点
 
 **问题**：
 
@@ -1081,7 +1081,7 @@ class Solution {
 }
 ```
 
-###### （3）树的直径
+#### （3）树的直径
 
 问题：
 
@@ -1156,7 +1156,7 @@ class Solution {
 }
 ```
 
-###### （4）1522. N 叉树的直径
+#### （4）1522. N 叉树的直径
 
 **问题**：
 
@@ -1226,7 +1226,7 @@ class Solution {
 }
 ```
 
-###### （5）543. 二叉树的直径
+#### （5）543. 二叉树的直径
 
 **问题**：
 
@@ -1273,7 +1273,7 @@ class Solution {
 }
 ```
 
-###### （6）742. 二叉树最近的叶节点
+#### （6）742. 二叉树最近的叶节点
 
 **问题**：
 
@@ -1377,9 +1377,9 @@ class Solution {
 
 
 
-#### （VIII）二叉搜索树的属性
+### 8、二叉搜索树的属性
 
-###### （1）[1373. 二叉搜索子树的最大键值和](https://leetcode.cn/problems/maximum-sum-bst-in-binary-tree/)
+#### （1）[1373. 二叉搜索子树的最大键值和](https://leetcode.cn/problems/maximum-sum-bst-in-binary-tree/)
 
 **问题**：
 
@@ -1506,7 +1506,7 @@ class Solution {
 }
 ```
 
-###### （2）510. 二叉搜索树中的中序后继 II:writing_hand: 
+#### （2）510. 二叉搜索树中的中序后继 II:writing_hand: 
 
 **问题**：
 
@@ -1550,9 +1550,9 @@ class Solution:
 
 ##### 
 
-#### （IX）二叉树的公共祖先问题
+### 9、二叉树的公共祖先问题
 
-###### （1）[236. 二叉树的最近公共祖先](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/)（树上倍增算法）
+#### （1）[236. 二叉树的最近公共祖先](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/)（树上倍增算法）
 
 **问题**：
 
@@ -1635,11 +1635,11 @@ class Solution {
 }
 ```
 
-###### （2）[235. 二叉搜索树的最近公共祖先](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/)
+#### （2）[235. 二叉搜索树的最近公共祖先](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/)
 
 
 
-###### （3）[1123. 最深叶节点的最近公共祖先](https://leetcode.cn/problems/lowest-common-ancestor-of-deepest-leaves/)（爬山法）
+#### （3）[1123. 最深叶节点的最近公共祖先](https://leetcode.cn/problems/lowest-common-ancestor-of-deepest-leaves/)（爬山法）
 
 **问题**：
 
@@ -1730,7 +1730,7 @@ class Solution {
 }
 ```
 
-###### （4）[1483. 树节点的第 K 个祖先](https://leetcode.cn/problems/kth-ancestor-of-a-tree-node/) （树上倍增算法）
+#### （4）[1483. 树节点的第 K 个祖先](https://leetcode.cn/problems/kth-ancestor-of-a-tree-node/) （树上倍增算法）
 
 **问题**：
 
@@ -1809,9 +1809,9 @@ class TreeAncestor {
 
 
 
-#### （X）特殊的树
+### 10、特殊的树
 
-###### （1）1382. 将二叉搜索树变平衡:writing_hand:  
+#### （1）1382. 将二叉搜索树变平衡:writing_hand:  
 
 **问题**
 
@@ -1947,9 +1947,9 @@ class Solution {
 }
 ```
 
-#### （XI）树的DFS
+### 11、树的DFS
 
-###### （1）2049. 统计最高分的节点数目
+#### （1）2049. 统计最高分的节点数目
 
 **问题**：
 
@@ -2025,7 +2025,7 @@ class Solution {
 }
 ```
 
-###### （2）[1080. 根到叶路径上的不足节点](https://leetcode.cn/problems/insufficient-nodes-in-root-to-leaf-paths/)（树的DFS遍历）
+#### （2）[1080. 根到叶路径上的不足节点](https://leetcode.cn/problems/insufficient-nodes-in-root-to-leaf-paths/)（树的DFS遍历）
 
 **问题**：
 
@@ -2091,7 +2091,7 @@ class Solution {
 
 
 
-###### （3）[LCP 67. 装饰树](https://leetcode.cn/problems/KnLfVT/) （树的DFS遍历）
+#### （3）[LCP 67. 装饰树](https://leetcode.cn/problems/KnLfVT/) （树的DFS遍历）
 
 **问题**：
 
@@ -2171,7 +2171,7 @@ class Solution {
 }
 ```
 
-###### （4）[979. 在二叉树中分配硬币](https://leetcode.cn/problems/distribute-coins-in-binary-tree/)
+#### （4）[979. 在二叉树中分配硬币](https://leetcode.cn/problems/distribute-coins-in-binary-tree/)
 
 **问题**
 
@@ -2226,7 +2226,7 @@ class Solution {
 }
 ```
 
-###### （5）1214. 查找两棵二叉搜索树之和
+#### （5）1214. 查找两棵二叉搜索树之和
 
 **问题**：
 
@@ -2337,7 +2337,7 @@ class Solution {
 }
 ```
 
-###### （6）1120. 子树的最大平均值
+#### （6）1120. 子树的最大平均值
 
 **问题**：
 
@@ -2394,1703 +2394,6 @@ class Solution {
 ```
 
 ##### 
-
-### 2、Tire 树
-
-#### （1）14. 最长公共前缀
-
-**问题**
-
-编写一个函数来查找字符串数组中的最长公共前缀。
-
-如果不存在公共前缀，返回空字符串 ""。
-
-**思路** **前缀树**
-
-```java
-class Solution {
-
-    final int N = 40010;
-    int[][] son = new int[N][26]; // 前缀树
-    int[] cnt = new int[N];
-    int idx = 0;
-
-    List<Integer> arr = new ArrayList<>(); // 公共前缀对应的ASCII数组
-
-    // 向前缀树中插入一个字符串
-    public void insert(char[] str) {
-        int p = 0;
-        for(int i = 0; i < str.length; i ++ ) {
-            int u = str[i] - 'a'; // 映射成ASCII
-            if(son[p][u] == 0) son[p][u] = ++ idx; // 创建一个结点
-            p = son[p][u];
-        }
-        cnt[p] ++ ;
-    }
-
-    // 编号为u的结点对应的字符为ch, 前缀树维护的字符串的个数为sum
-    public void dfs(int u, int ch, int sum) { // 在前缀树中查找所有字符串的公共前缀
-        if(u != 0) arr.add(ch);
-        
-        if(cnt[u] != 0 && cnt[u] < sum) return ; // 情况1：从根结点到u的路径是一个字符串
-        
-        int kids = 0;
-        for(int i = 0; i < 26; i ++ )
-            if(son[u][i] != 0) kids ++ ;
-        if(kids == 0 || kids > 1 ) return ; // 情况2
-
-        for(int i = 0; i < 26; i ++ ) // 继续查找公共前缀的下一个字符
-            if(son[u][i] != 0) dfs(son[u][i], i, sum);
-    }
-
-    public String longestCommonPrefix(String[] strs) {
-        for(int i = 0; i < strs.length; i ++ ) {
-            if("".equals(strs[i])) return ""; // 特判
-            insert(strs[i].toCharArray());
-        }
-
-        dfs(0, -1, strs.length);
-        String prefix = "";
-        for(int i = 0; i < arr.size(); i ++ ) { // ASCII数组转换成字符串
-            char ch = (char)(arr.get(i) + 'a');
-            prefix = prefix + ch;
-        }
-        return prefix;
-    }
-}
-```
-
-### 3、线段树
-
-#### （1）LCP 09. 最小跳跃次数:writing_hand: 
-
-**问题**：
-
-为了给刷题的同学一些奖励，力扣团队引入了一个弹簧游戏机。游戏机由 `N` 个特殊弹簧排成一排，编号为 `0` 到 `N-1`。
-
-初始有一个小球在编号 `0` 的弹簧处。若小球在编号为 `i` 的弹簧处，通过按动弹簧，可以选择把小球向右弹射 `jump[i]` 的距离，或者向左弹射到**任意左侧弹簧的位置**。
-
-也就是说，在编号为 `i` 弹簧处按动弹簧，小球可以弹向 `0` 到 `i-1` 中任意弹簧或者 `i+jump[i]` 的弹簧（若 `i+jump[i]>=N` ，则表示小球弹出了机器）。小球位于编号 0 处的弹簧时不能再向左弹。
-
-为了获得奖励，你需要将小球弹出机器。请求出**最少**需要按动多少次弹簧，可以将小球从编号 `0` 弹簧弹出整个机器，即向右越过编号 `N-1` 的弹簧。
-
-**简化后的问题**：给定一个数组 `jump`，长度为 `N`，在第 `i` 个位置可以选择跳到 `0..i-1` 和 `i + jump[i]`，问从 `0` 跳过 `n-1` 的最小跳跃次数是多少？
-
-**数据范围**：
-
-- `1 <= jump.length <= 10^6`
-- `1 <= jump[i] <= 10000`
-
-**思路**：
-
-- 考虑第 `i` 个位置，可以**直接跳**到 `i+jump[i]`, 也可以**跳两步**（即先跳到$i+jump[i]$，再往回跳）跳到所有的 `i+1 .. i+jump[i]-1`。
-- 每一个元素`f[i]`表示从`1`位置跳到`i`位置的最少跳数。
-- 向右跳：`f[i+jump[i]] = min(f[i + jump[i]], f[i] + 1)` 。
-- 向左跳：`f[j] = min(f[j], f[i] + 2), i < j < i+jump[i]` 。
-
-用**线段树**来实现区间更新，单点查询。线段树某个节点的区间维护的是数组$f$的区间最小值。
-
-```java
-class Node{ // 线段树的结点, 维护一段区间的信息, jump 和 minj初始化都为0x3f3f3f3f
-    int l,r; // 区间的左右边界
-    int jump; // 表示从1位置跳到[l,r]中的任意一个位置的最少的跳数
-    int minj; // 懒标记
-    Node(int l, int r){ this.l = l; this.r = r; this.minj = 0x3f3f3f3f;}
-    Node(int l, int r, int jump){ this.l = l; this.r = r; this.jump = jump;this.minj = 0x3f3f3f3f;}
-}
-
-class Solution {
-    final int INF = 0x3f3f3f3f;
-    Node[] tr; // 线段树
-    int[] f; // 权值序列，权值序列的每一个元素f[i]表示从1位置跳到该位置的最少跳数
-    int n; // 权值序列的实际元素个数
-
-    public void pushUp(int u){
-        tr[u].jump = Math.min(tr[u << 1].jump, tr[u << 1|1].jump);
-    }
-
-    public void pushDown(int u){ // 下传标记
-        if(tr[u].l == tr[u].r) {tr[u].minj = INF; return ;} // 叶子结点，清流标记
-        tr[u << 1].jump = Math.min(tr[u << 1].jump, tr[u].minj);
-        tr[u << 1|1].jump = Math.min(tr[u << 1|1].jump, tr[u].minj);
-        tr[u << 1].minj = Math.min(tr[u << 1].minj, tr[u].minj);
-        tr[u << 1|1].minj = Math.min(tr[u << 1|1].minj, tr[u].minj);
-        tr[u].minj = INF; // 清空标记
-    }
-
-    public void build(int u, int l, int r){
-        if(l == r) tr[u] = new Node(l,r,f[l]);
-        else{
-            tr[u] = new Node(l,r);
-            int mid = l + r >> 1;
-            build(u << 1, l, mid);
-            build(u << 1|1, mid + 1, r);
-            pushUp(u);
-        }
-    }
-
-    public int query(int u, int x){ // 单点查询
-        if(tr[u].l == tr[u].r) return tr[u].jump;
-        else{
-            pushDown(u); // 递归查询前, 先下传标记
-            int mid = tr[u].l + tr[u].r >> 1;
-            if(x <= mid) return query(u << 1, x);
-            else return query(u << 1|1, x);
-        }
-    }
-
-    public void modify(int u, int l, int r, int v){ // 区间更新
-        if(tr[u].l >= l && tr[u].r <= r) {
-            tr[u].jump = Math.min(tr[u].jump, v);
-            tr[u].minj = Math.min(tr[u].minj, v);
-        }else{
-            pushDown(u);
-            int mid = tr[u].l + tr[u].r >> 1;
-            if(l <= mid) modify(u << 1, l, r, v);
-            if(r > mid) modify(u << 1|1, l, r, v);
-            // pushUp(u); // 单点查询时此处无需更新父结点
-        }
-    }
-
-    public int minJump(int[] jump) {
-        n = jump.length;
-        tr = new Node[4*(n+1)];
-        f = new int[n + 1];
-        Arrays.fill(f, INF); // 初始化为无穷大表示无法到达
-        build(1, 1, n);
-        modify(1, 1, 1, 0); // 从1位置到达1位置最小跳数为0
-
-        int res = INF;
-        for(int i = 0; i < n; i ++){
-            int cnt = query(1, i + 1); // 从0到达i位置最少跳多少次
-            if(i + jump[i] >= n) res = Math.min(res, cnt + 1); // 再跳一次就跳出机器
-            else{ 
-                modify(1, i+jump[i]+1,i+jump[i]+1, cnt + 1);
-                if(i+1+1 <= i+jump[i]-1+1) modify(1, i+1+1, i+jump[i]-1+1, cnt + 2);
-            }
-        }
-        return res;
-    }
-}
-```
-
-#### （2）[LCP 52. 二叉搜索树染色](https://leetcode.cn/problems/QO5KpG/)
-
-**问题**：
-
-欢迎各位勇者来到力扣城，本次试炼主题为「二叉搜索树染色」。
-
-每位勇士面前设有一个**二叉搜索树**的模型，模型的根节点为 `root`，树上的各个节点值均不重复。初始时，所有节点均为蓝色。现在按顺序对这棵二叉树进行若干次操作， `ops[i] = [type, x, y]` 表示第 `i` 次操作为：
-
-- `type` 等于 0 时，将节点值范围在 `[x, y]` 的节点均染蓝
-- `type` 等于 1 时，将节点值范围在 `[x, y]` 的节点均染红
-
-请返回完成所有染色后，该二叉树中红色节点的数量。
-
-例子：
-
-```
-输入：root = [4,2,7,1,null,5,null,null,null,null,6]
-ops = [[0,2,2],[1,1,5],[0,4,5],[1,5,7]]
-
-输出：5
-
-解释：
-第 0 次操作，将值为 2 的节点染蓝；
-第 1 次操作，将值为 1、2、4、5 的节点染红；
-第 2 次操作，将值为 4、5 的节点染蓝；
-第 3 次操作，将值为 5、6、7 的节点染红；
-因此，最终值为 1、2、5、6、7 的节点为红色节点，返回数量 5
-```
-
-<img src="https://pic.leetcode-cn.com/1649833763-BljEbP-image.png" alt="image.png" style="zoom:50%;" />
-
-
-
-**注意：**
-
-- 题目保证对于每个操作的 `x`、`y` 值定出现在二叉搜索树节点中
-
-数据范围：
-
-- `1 <= 二叉树节点数量 <= 10^5`
-- `1 <= ops.length <= 10^5`
-- `ops[i].length == 3`
-- `ops[i][0]` 仅为 `0` or `1`
-- `0 <= ops[i][1] <= ops[i][2] <= 10^9`
-- `0 <= 节点值 <= 10^9`
-
-**思路**：区间更新和区间查询
-
-二叉搜索树的节点值不同，其数据范围是`0 <= 节点值 <= 10^9`，节点个数是`1 <= 二叉树节点数量 <= 10^5`，首先需要对节点值进行离散化处理。将所有节点值从小到大排序后，离散化到1~n之间。
-
-线段树某个节点的区间维护的是该区间内的红色节点的数量。
-
-```java
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
-
-class Node { // 定义线段树
-    int l, r; // 维护区间的左右边界 
-    int sum; // 维护区间中红色节点的数量
-    int tadd = -1; // 懒标签, 0-表示将区间中所有节点染成蓝色，1表示染成红色, -1表示懒标记清空
-    Node(int ll, int rr) {l = ll; r = rr;}
-    Node(int ll, int rr, int s) {l = ll; r = rr; sum = s;}
-}
-
-class Solution {
-
-    List<Integer> arr = new ArrayList<>();
-    Map<Integer, Integer> map = new HashMap<>();
-    
-    int n;
-    int[] w; // 权值序列, w[i]=0表示节点i是蓝色
-    Node[] tr; // 线段树是一颗完全二叉树，用一个一维数组来存储
-
-    public void dfs(TreeNode u) {
-        if(u.left != null) dfs(u.left);
-        if(u.right != null) dfs(u.right);
-        arr.add(u.val);
-    }
-
-    public void pushup(int u) { // 用u的左右孩子更新u的信息
-        tr[u].sum = tr[u << 1].sum + tr[u << 1 | 1].sum;
-    }
-
-    public void pushdown(int u) { // 懒标记下传，只下传一层。依据懒标记的信息，更新u的左右子节点
-        if(tr[u].tadd == -1) return; // u的懒标签是清空状态
-        if(tr[u].l == tr[u].r) {tr[u].tadd = -1; return;} // 如果u是叶子节点，它没有子节点，直接清空懒标记
-        tr[u << 1].sum = (tr[u << 1].r - tr[u << 1].l + 1) * tr[u].tadd; // 左子树
-        tr[u << 1 | 1].sum = (tr[u << 1 | 1].r - tr[u << 1 | 1].l + 1) * tr[u].tadd; // 右子树
-        tr[u << 1].tadd = tr[u].tadd; // 更新左子树tadd
-        tr[u << 1 | 1].tadd = tr[u].tadd; // 更新右子树的tadd
-        tr[u].tadd = -1; // 清空自己懒标记
-    }
-
-    public void build(int u, int l, int r) { // 用权值序列w的区间[l,r]构建以u为根节点的子树
-        if(l == r) tr[u] = new Node(l, r, w[l]); // 如果[l,r]是单个元素，对应的节点是叶子节点，则直接构建
-        else {
-            tr[u] = new Node(l, r);
-            int mid = l + r >> 1;
-            build(u << 1, l, mid); // 构建u的左子树
-            build(u << 1 | 1, mid + 1, r); // 构建u的右子树
-            pushup(u);
-        }
-    }
-
-    // 在更新之前，先将之前的懒标记下传pushdown(u) ->递归更新modify(u) -> pushup(u)
-    public void modify(int u, int l, int r, int v) { // 将区间[l,r]之间的节点都染成v, 0是蓝色, 1是红色
-        if(tr[u].l >= l && tr[u].r <= r) { // 如果u表示的区间包含在修改区间[l,r]中
-            tr[u].sum = (tr[u].r - tr[u].l + 1) * v;
-            tr[u].tadd = v; // 更新懒标记
-        } else {
-            pushdown(u); // 懒标记下传
-            int mid = tr[u].l + tr[u].r >> 1;
-            if(l <= mid) modify(u << 1, l, r, v);
-            if(r > mid) modify(u << 1 | 1, l, r, v);
-            pushup(u);
-        }
-    }
-
-    public int query(int u, int l, int r) {
-        if(tr[u].l >= l && tr[u].r <= r) return tr[u].sum; // u节点表示的区间包含在查询区间[l,r]
-        pushdown(u);
-        int res = 0;
-        int mid = tr[u].l + tr[u].r >> 1;
-        if(l <= mid) res += query(u << 1, l, r);
-        if(r > mid) res += query(u << 1 | 1, l, r);
-        return res;
-    }
-
-    public int getNumber(TreeNode root, int[][] ops) {
-        // 离散化
-        dfs(root);
-        Collections.sort(arr);
-        for(int i = 0; i < arr.size(); i ++ ) map.put(arr.get(i), i + 1); // 将所有节点值离散化到1~n
-
-        n = arr.size();
-        w = new int[n + 1]; // 所有借点初始状态都是蓝色0, 下标从1开始
-        tr = new Node[4 * n];
-
-        // 构建线段树
-        build(1, 1, n); // 完全二叉树的根节点编号必须从1开始
-
-        // 区间修改
-        for(int i = 0; i < ops.length; i ++ ) {
-            int v = ops[i][0], l = ops[i][1], r = ops[i][2];
-            modify(1, map.get(l), map.get(r), v);
-        }
-
-        return query(1, 1, n);
-    }
-}
-```
-
-#### （3）[6468. 统计没有收到请求的服务器数目](https://leetcode.cn/problems/count-zero-request-servers/)
-
-**问题**：
-
-给你一个整数 `n` ，表示服务器的总数目，再给你一个下标从 **0** 开始的 **二维** 整数数组 `logs`，其中 `logs[i] = [server_id, time]` 表示id 为 `server_id` 的服务器在 `time` 时收到了一个请求。
-
-同时给你一个整数 `x` 和一个下标从 **0** 开始的整数数组 `queries` 。
-
-请你返回一个长度等于 `queries.length` 的数组 `arr` ，其中 `arr[i]` 表示在时间区间 `[queries[i] - x, queries[i]]` 内没有收到请求的服务器数目。
-
-注意时间区间是个闭区间。
-
-例子：
-
-```
-输入：n = 3, logs = [[1,3],[2,6],[1,5]], x = 5, queries = [10,11]
-输出：[1,2]
-解释：
-对于 queries[0]：id 为 1 和 2 的服务器在区间 [5, 10] 内收到了请求，所以只有服务器 3 没有收到请求。
-对于 queries[1]：id 为 2 的服务器在区间 [6,11] 内收到了请求，所以 id 为 1 和 3 的服务器在这个时间段内没有收到请求。
-```
-
-**数据范围**：
-
-- `1 <= n <= 60`
-- `1 <= logs.length <= 10^5`
-- `1 <= queries.length <= 10^5`
-- `logs[i].length == 2`
-- **`1 <= logs[i][0] <= n`**
-- `1 <= logs[i][1] <= 10^6`
-- `1 <= x <= 10^5`
-- `x < queries[i] <= 10^6`
-
-**思路**：
-
-题目给定了一组日志记录 $logs$，$logs[i]$表示编号为$logs[i][0]$的服务器在时刻$logs[i][1]$收到了一个请求。服务器的集群数量为 $n, 1<=n<=60$。给定一组查询$queries$，要求查询时间区间 $[queries[i]-x, queries[i]]$内没有收到请求的服务器。
-
-所有问题可以看做一个**单点修改、区间查询**的问题。考虑使用线段树或者树状数组来解决
-
-其中，线段树的节点维护了一段时间区间，以及在该时间区间内收到请求的服务器编号的集合，**该集合包含不重复的元素**。
-
-在线段树的单点修改和区间查询涉及到**集合合并操作**。设单点修改的数量为 $P$，查询的个数为 $K$，涉及到总时间区间长度为 $D$，在**不考虑集合合并操作的时间复杂度下**，总的时间复杂度为 $O(PlogD+KlogD)$。
-
-为了使得集合合并操作复杂度尽可能的小，在服务器规模 $n$ 比较小的情况下，我们可以考虑**采用二进制表示集合**，**位运算实现集合合并和新增元素操作**，这些集合操作复杂度为 $O(1)$。`long`的数据范围为$2^{64}$，因此二进制可以表示的集合大小为 $64$。
-
-但是，在服务器规模 $n$ 比较大的情况下，即使使用大整数实现二进制表示集合，但是其集合操作时间复杂度不是常数复杂度，使得算法总的复杂度较高，此时可以考虑使用其他算法来解决此问题。
-
-```java
-class Node {
-    int l, r;
-    long sum; // 二进制表示集合
-    Node(int ll, int rr) {l = ll; r = rr;}
-    Node(int ll, int rr, int s) {l = ll; r = rr; sum = s;}
-}
-
-class Solution {
-    
-    int N = 0;
-    int[] w;
-    Node[] tr;
-    
-    public void pushup(int u) {
-        tr[u].sum = tr[u << 1].sum | tr[u << 1 | 1].sum; // 集合合并
-    }
-    
-    public void build(int u, int l, int r) {
-        if(l == r) tr[u] = new Node(l, r, w[l]);
-        else {
-            tr[u] = new Node(l, r);
-            int mid = l + r >> 1;
-            build(u << 1, l, mid);
-            build(u << 1 | 1, mid + 1, r);
-            pushup(u);
-        }
-    }
-    
-    public void modify(int u, int x, int v) {
-        if(tr[u].l == tr[u].r &&(((tr[u].sum >> v) & 1) == 0)) tr[u].sum += 1 << v; // 如何集合中不包此元素，则向集合中添加元素
-        else {
-            int mid = tr[u].l + tr[u].r >> 1;
-            if(x <= mid) modify(u << 1, x, v);
-            else modify(u << 1 | 1, x, v);
-            pushup(u);
-        }
-    }
-    
-    public long query(int u, int l, int r) {
-        if(tr[u].l >= l && tr[u].r <= r) return tr[u].sum;
-        int mid = tr[u].l + tr[u].r >> 1;
-        long res = 0; // 集合合并
-        if(l <= mid) res |= query(u << 1, l, r);
-        if(r > mid) res |= query(u << 1 | 1, l, r);
-        return res;
-    }
-    
-    public int count(long x) {
-        int res = 0;
-        while(x != 0) {
-            if((x & 1) == 1) res ++;
-            x >>= 1;
-        }
-        return res;
-    }
-           
-    public int[] countServers(int n, int[][] logs, int x, int[] queries) {
-        for(int i = 0; i < logs.length; i ++ ) N = Math.max(N, logs[i][1]);
-        for(int i = 0; i < queries.length; i ++) N = Math.max(N, queries[i]);
-        
-        w = new int[N + 10];
-        tr = new Node[4 * (N + 10)];
-        
-        build(1, 1, w.length - 1);
-        
-        for(int i = 0;  i < logs.length; i ++ ) {
-            int v = logs[i][0], y = logs[i][1];
-            modify(1, y, v);
-        }
-
-        int[] res = new int[queries.length];
-        for(int i = 0; i < queries.length; i ++ ) 
-            res[i] = n - count(query(1, queries[i] - x, queries[i]));
-        return res;
-    }
-}
-```
-
-#### （4）[2569. 更新数组后处理求和查询](https://leetcode.cn/problems/handling-sum-queries-after-update/) 
-
-### 4、树状数组
-
-#### （I）一维树状数组
-
-###### （1）307. 区域和检索 - 数组可修改
-
-**问题**：
-
-给你一个数组 `nums` ，请你完成两类查询。
-
-- 其中一类查询要求 **更新** 数组 `nums` 下标对应的值
-- 另一类查询要求返回数组 `nums` 中索引 `left` 和索引 `right` 之间（ **包含** ）的nums元素的 **和** ，其中 `left <= right` 
-
-实现 `NumArray` 类：
-
-- `NumArray(int[] nums)` 用整数数组 `nums` 初始化对象
-- `void update(int index, int val)` 将 `nums[index]` 的值 **更新** 为 `val` 
-- `int sumRange(int left, int right)` 返回数组 `nums` 中索引 `left` 和索引 `right` 之间（ **包含** ）的nums元素的 **和** （即，`nums[left] + nums[left + 1], ..., nums[right]`）
-
-**思路**：树状数组模板题
-
-```java
-class NumArray {
-
-    int n;
-    int[] a, tr; // a是原数组, tr是树状数组
-
-    public int lowbit(int x) { // 返回x末尾0的个数
-        return x & -x;
-    }
-
-    public void add(int x, int v) { // 在原数组x的位置加上v， 同时更新树状数组
-        for(int i = x; i <= n; i += lowbit(i)) tr[i] += v;
-    }
-
-    public int query(int x) { // 返回原数组[0,x]之间所有元素的和
-        int res = 0;
-        for(int i = x; i != 0; i -= lowbit(i)) res += tr[i];
-        return res;
-    }
-
-    public NumArray(int[] nums) {
-        n = nums.length;
-        tr = new int[n + 10];
-        a = nums;
-        for(int i = 1; i <= n; i ++ ) add(i, nums[i - 1]); // 用nums数组初始化树状数组
-    }
-    
-    public void update(int index, int val) { // 单点更新
-        int x = index + 1;
-        add(x, val - a[index]);
-        a[index] =  val;
-    }
-    
-    public int sumRange(int left, int right) { // 区间求和
-        int l = left + 1, r = right + 1;
-        return query(r) - query(l - 1);
-    }
-}
-
-/**
- * Your NumArray object will be instantiated and called as such:
- * NumArray obj = new NumArray(nums);
- * obj.update(index,val);
- * int param_2 = obj.sumRange(left,right);
- */
-```
-
-###### （2）683. K 个关闭的灯泡
-
-**问题**：
-
-`n` 个灯泡排成一行，编号从 `1` 到 `n` 。最初，所有灯泡都关闭。每天 **只打开一个** 灯泡，直到 `n` 天后所有灯泡都打开。
-
-给你一个长度为 `n` 的灯泡数组 `blubs` ，其中 `bulls[i] = x` 意味着在第 `(i+1)` 天，我们会把在位置 `x` 的灯泡打开，其中 `i` **从 0 开始**，`x` **从 1 开始**。
-
-给你一个整数 `k` ，请返回恰好有两个打开的灯泡，且它们中间 **正好** 有 `k` 个 **全部关闭的** 灯泡的 **最小的天数** 。如果不存在这种情况，返回 `-1` 。
-
-**思路**：
-
-对于`bulbs[i] = x`：
-
-- 检查 `x` 前后间隔 `k` 个灯泡的灯泡亮没亮
-- `x - 1`和 `x - k - 1`这两个位置的前缀和是否相等，即中间间隔的 `k` 个灯是否都是灭的。同时`x - k - 1` 与 `x - k - 1 - 1` 位置的前缀和应该相差 `1`，即两端的灯应该是亮着
-- `x` 和 `x + k` 这两个位置的前缀和是否相等，即中间间隔的 `k` 个灯是否都灭了。同时`x + k + 1` 与 `x` 位置的前缀和应该相差 `1`，即两端的灯应该是亮着
-
-```java
-class Solution {
-
-    int n;
-    int[] tr; // 树状数组
-
-    public int lowbit(int x) { // lowbit(x)返回x末尾1的个数
-        return x & -x;
-    }
-
-    public void add(int x, int v) { // 将元素组x的位置的元素加上v
-        for(int i = x; i <= n; i += lowbit(i)) tr[i] += v;
-    }
-
-    public int query(int x) { // 查询[1, x]的区间和
-        int res = 0;
-        for(int i = x; i != 0; i -= lowbit(i)) res += tr[i];
-        return res;
-    }
-
-    public int kEmptySlots(int[] bulbs, int k) {
-        n = bulbs.length;
-        tr = new int[n + 10];
-        for(int i = 0; i < bulbs.length; i ++ ) {
-            int x = bulbs[i];
-            add(x, 1);
-
-            if(x + k + 1 <= n) { // 恰好有两个打开的灯泡, 其中间[x-k, x-1] 之间的灯泡全部熄灭
-                int a = query(x), b = query(x + k), c = query(x + k + 1);
-                if(a == b && c - a == 1) return i + 1;
-            } 
-            if(x - k - 1 >= 1) {  // 恰好有两个打开的灯泡, 其中间[x-k, x-1] 之间的灯泡全部熄灭
-                int a = query(x - k - 1 - 1), b = query(x - k - 1), c = query(x - 1);
-                if(b - a == 1 && b == c) return i + 1;
-            }
-        }
-        return -1;
-    }
-}
-```
-
-#### （II）离散化——树状数组
-
-###### （1）剑指 Offer 51. 数组中的逆序对:writing_hand: 
-
-**思路**：
-
-- 将`nums`数组的元素进行去除排序，映射到`1~n`
-- 原数组`a[k]`存储`nums[i]`出现的次数，树状数组`tr[k]`支持单点修改并维护前缀和
-- 从后向前枚举`nums`数组。`nums[i]`对应的原数组为`a[k]`，更新`nums[i]`出现的次数，并求出前缀和，即比`nums[i]`元素之后比`nums[i]`小的元素个数，也即逆序对的个数
-
-```java
-class Solution {
-    int[] tr; // 树状数组
-    int n;
-    Map<Integer,Integer> mp = new HashMap<>();
-
-    public int lowbit(int x){ // lowbit(x) = 2^k k是x二进制表示末尾0的个数
-        return x & -x;
-    }
-
-    public void add(int x, int v){ // 单点修改
-        for(int i = x; i <= n; i += lowbit(i)) tr[i] += v;
-    } 
-
-    public int query(int x){ // 区间查询
-        int res = 0;
-        for(int i = x; i != 0; i -= lowbit(i)) res += tr[i];
-        return res;
-    }
-
-    public int reversePairs(int[] nums) {
-        n = nums.length;
-        tr = new int[n + 1]; // 树状数组下标从1开始
-        // 对nums数组元素去重并排序
-        Set<Integer> set = new TreeSet<>();
-        for(int i = 0; i < n; i ++) set.add(nums[i]); 
-        // 对元素进行离散化
-        int idx = 1; // 映射到 1~k
-        for(Integer i : set) mp.put(i, idx ++);
-
-        int res = 0;
-        for(int i = n - 1; i >= 0; i --){ // 从后向前枚举nums数组
-            int k = mp.get(nums[i]); // 得到nums[i]的映射值
-            add(k, 1); // 原数组a[k]存储了nums[i]元素的个数, 更新原素组, 同时更新树状数组
-            res += query(k - 1); // 查询nums[i]后面比它小的元素个数, 即与其构成逆序对的个数
-        }
-        return res;
-    }
-
-}
-```
-
-###### （2）315. 计算右侧小于当前元素的个数
-
-**问题**：
-
-给你一个整数数组 `nums` ，按要求返回一个新数组 `counts` 。数组 `counts` 有该性质： `counts[i]` 的值是 `nums[i]` 右侧小于 `nums[i]` 的元素的数量。
-
-**思路**：此题与上一题求数组中逆序对的个数相似
-
-```java
-class Solution {
-    
-    int n; 
-    int[] tr; // 树状数组
-    
-    public int lowbit(int x) {
-        return x & -x;
-    }
-
-    public void add(int x, int v) {
-        for(int i = x; i <= n; i += lowbit(i)) tr[i] += v;
-    }
-
-    public int query(int x) {
-        int res = 0;
-        for(int i = x; i != 0; i -= lowbit(i)) res += tr[i];
-        return res;
-    }
-
-    public List<Integer> countSmaller(int[] nums) {
-        // 将所有数从小到大排序, 去重, 离散化
-        TreeSet<Integer> unique  = new TreeSet<>();
-        for(int val : nums) unique.add(val);
-        HashMap<Integer, Integer> hash = new HashMap<>();
-        int idx = 1;
-        for(Integer val : unique) hash.put(val, idx ++ );
-
-        n = unique.size();
-        tr = new int[n + 10];
-        
-        // 从右往左遍历nums[i], 依次统计nums[i] 右侧小于 nums[i] 的元素的数量
-        LinkedList<Integer> res = new LinkedList<>();
-        for(int i = nums.length - 1; i >= 0; i -- ) {
-            int t = hash.get(nums[i]); // t 是 nums[i] 映射后的值
-            res.addFirst(query(t - 1)); // 求 nums[i] 右侧小于 nums[i] 的元素的数量
-            add(t, 1);
-        }
-        return res;
-    }
-}
-```
-
-
-
-#### （III）前缀和离散化——树状数组
-
-###### （1）327. 区间和的个数:writing_hand: 
-
-**问题**：
-
-给你一个整数数组 `nums` 以及两个整数 `lower` 和 `upper` 。求数组中，值位于范围 `[lower, upper]` （包含 `lower` 和 `upper`）之内的 **区间和的个数** 。
-
-**区间和** `S(i, j)` 表示在 `nums` 中，位置从 `i` 到 `j` 的元素之和，包含 `i` 和 `j` (`i` ≤ `j`)。
-
-**注意**：`-231 <= nums[i] <= 231 - 1` 
-
-**思路**：
-
-设前缀和数组为 $s$ ，则问题等价于求所有的下标对$(i,j)$，满足下列等式的个数：
-$$
-s[j]−s[i]∈[lower,upper]
-$$
-对于每个下标 $j$，以 $j$ 为右端点的满足条件的下标对的数量，就等于数组 $[0..j−1]$ 中的所有整数，出现在区间 $[s[j]−upper,s[j]−lower]$ 的次数。
-
-所以可以考虑使用树状数组
-
-具体地：
-
-- 对原数组求前缀和，得到前缀和数组
-- 对所有的前缀和、前缀和与`upper`的差、前缀和与`lower`的差进行离散化
-  - 从小到大排序 
-  - 去重
-  - 从下标1开始映射
-- 从左往右遍历前缀和数组的每一个元素$s[j]$，先进行在树状数组中区间查询 $[s[j]−upper,s[j]−lower]$ ，然后在单点更新 $s[j]$
-
-```java
-class Solution {
-
-    int n; // 树状数组实际元素个数
-    long[] s;
-    int[] tr; // s 是前缀和数组, tr是树状数组, s和tr下标都是从1开始
-
-    public int lowbit(int x) { // lowbit(x)返回x末尾1的个数
-        return x & -x;
-    }
-
-    public void add(int x, int v) { // 将元素组x的位置的元素加上v
-        for(int i = x; i <= n; i += lowbit(i)) tr[i] += v;
-    }
-
-    public int query(int x) { // 查询[1, x]的区间和
-        int res = 0;
-        for(int i = x; i != 0; i -= lowbit(i)) res += tr[i];
-        return res;
-    }
-
-    public int countRangeSum(int[] nums, int lower, int upper) {
-        s = new long[nums.length + 10]; 
-
-        // 求前缀和
-        for(int i = 1; i <= nums.length; i ++ ) s[i] = s[i - 1] + nums[i - 1];
-
-        // 将前缀和离散化到 1 ~ k
-        TreeSet<Long> ts = new TreeSet<>();
-        for(int i = 0; i <= nums.length; i ++ ) { // 从小到大排序并去重, s[0] 也需要加入
-            ts.add(s[i]); 
-            ts.add(s[i] - lower);
-            ts.add(s[i] - upper); // s[i] - upper 和 s[i] - lower 也需要加入进行离散化
-        }
-        int idx = 1;
-        HashMap<Long, Integer> hash = new HashMap<>();
-        for(Long val : ts) hash.put(val, idx ++); // 从1开始映射
-        
-        n = ts.size(); // n为树状数组的实际大小
-        tr = new int[n + 10];
-        
-        int res = 0;
-        for(int i = 0; i <= nums.length; i ++) { // 从前往后枚举前缀和数组, s[0]也需要加入
-            //  query(r)是和为前缀和为s[i] - lower出现的次数
-            int l = hash.get(s[i] - upper), r = hash.get(s[i] - lower);
-            res += query(r) - query(l - 1);
-            add(hash.get(s[i]), 1);
-        }
-
-        return res;
-    }
-}
-```
-
-###### （2）2031. 1 比 0 多的子数组个数
-
-**问题**：
-
-给你一个只包含 `0` 和 `1` 的数组 `nums`，请返回 `1` 的数量 **大于** `0` 的数量的子数组的个数。由于答案可能很大，请返回答案对 `109 + 7` **取余** 的结果。
-
-一个 **子数组** 指的是原数组中连续的一个子序列。
-
-思路：
-
-- 将原数组中的所有的 `0` 都换成 `-1`
-- 设其前缀和数组为 $s$， 对于每个下标 $j$，以 $j$ 为右端点的满足条件的子数组的个数(`1` 的数量 **大于** `0` 的数量的子数组的个数)，等价于求 在 $j$ 左边比 $s[j]$ 小的前缀和的数量
-- 可以考虑使用树状数组
-
-具体的：
-
-- 对原数组求前缀和，得到前缀和数组
-- 对所有的前缀和进行离散化
-  - 从小到大排序 
-  - 去重
-  - 从下标1开始映射
-- 从左往右遍历前缀和数组的每一个元素$s[j]$，先进行在树状数组中区间查询 ，然后在单点更新 $s[j]$
-
-```java
-class Solution {
-
-    final int MOD = (int)1e9 + 7;
-    int n;
-    int[] tr; // 树状数组
-
-    public int lowbit(int x) {
-        return x & -x;
-    }
-
-    public void add(int x, int v) {
-        for(int i = x; i <= n; i += lowbit(i)) tr[i] += v;
-    }
-
-    public int query(int x) {
-        int res = 0;
-        for(int i = x; i != 0; i -= lowbit(i)) res = (res + tr[i]) % MOD;
-        return res;
-    }
-
-    public int subarraysWithMoreZerosThanOnes(int[] nums) {
-        int[] s = new int[nums.length + 10]; // 前缀和数组
-
-        for(int i = 0; i < nums.length; i ++ ) // 将数组中所有的0替换成-1
-            if(nums[i] == 0) nums[i] = -1;
-        for(int i = 1; i <= nums.length; i ++ ) s[i] = s[i - 1] + nums[i - 1]; // 求前缀和
-
-        // 所有前缀和和从小到大排序, 去重, 离散化
-        TreeSet<Integer> unique = new TreeSet<>();
-        for(int i = 0; i <= nums.length; i ++ ) unique.add(s[i]);
-        int idx = 1;
-        HashMap<Integer, Integer> hash = new HashMap<>();
-        for(Integer val : unique) hash.put(val, idx ++ );
-
-        n = unique.size();
-        tr = new int[n + 10];
-        
-        int res = 0;
-        for(int i = 0; i <= nums.length; i ++ ) {
-            int t = hash.get(s[i]);
-            res = (res + query(t - 1)) % MOD;
-            add(t, 1);
-        }
-        return res;
-    }
-}
-```
-
-
-
-#### （IV）二维树状数组
-
-###### （1）308. 二维区域和检索 - 可变:writing_hand: 
-
-**问题**：
-
-给你一个二维矩阵 `matrix` ，你需要处理下面两种类型的若干次查询：
-
-- **更新：**更新 `matrix` 中某个单元的值。
-- **求和：**计算矩阵 `matrix` 中某一矩形区域元素的 **和** ，该区域由 **左上角** `(row1, col1)` 和 **右下角** `(row2, col2)` 界定。
-
-实现 `NumMatrix` 类：
-
-- `NumMatrix(int[][] matrix)` 用整数矩阵 `matrix` 初始化对象。
-- `void update(int row, int col, int val)` 更新 `matrix[row][col]` 的值到 `val` 。
-- `int sumRegion(int row1, int col1, int row2, int col2)` 返回矩阵 `matrix` 中指定矩形区域元素的 **和** ，该区域由 **左上角** `(row1, col1)` 和 **右下角** `(row2, col2)` 界定。
-
-<img src="https://raw.githubusercontent.com/JackFroster/Images/main/image/202203162232909.jpeg" alt="img" width="500px" />
-
-**思路**：与一维前缀和类似，二维前缀和模板题
-
-```java
-class NumMatrix {
-
-    int m, n; // 子矩阵 m 行, n 列 
-    int[][] a, tr; // a表示原数组, tr表示树状数组
-
-    public int lowbit(int x) { // 返回x的末尾0的个数
-        return x & -x;
-    }
-
-    public void add(int x, int y, int v) { // 将原数组(x,y)更新为val, 同时更新tr
-        for(int i = x; i <= m; i += lowbit(i)) 
-            for(int j = y; j <= n; j += lowbit(j))
-                tr[i][j] += v;
-    }   
-
-    public int query(int x, int y) { // 查询 (1,1) 到 (x, y) 构成的子矩阵的和
-        int res = 0;
-        for(int i = x; i != 0; i -= lowbit(i))
-            for(int j = y; j != 0; j -= lowbit(j))
-                res += tr[i][j];
-        return res;
-    }
-
-    public NumMatrix(int[][] matrix) {
-        m = matrix.length; n = matrix[0].length;
-        tr = new int[n + 10][n + 10];
-        a = new int[n + 10][n + 10];
-        for(int i = 0; i < m; i ++ )
-            for(int j = 0; j < n; j ++){
-                a[i + 1][j + 1] = matrix[i][j];
-                add(i + 1, j + 1, matrix[i][j]); // 初始化树状数组
-            }
-    }
-    
-    public void update(int row, int col, int val) { // 单点修改
-        int x = row + 1, y = col + 1;
-        add(x, y, val - a[x][y]);
-        a[x][y] = val;
-    }
-    
-    public int sumRegion(int row1, int col1, int row2, int col2) { // 区间查询
-        int x1 = row1 + 1, y1 = col1 + 1, x2 = row2 + 1, y2 = col2 + 1;
-        return query(x2, y2) - query(x2, y1 - 1) - query(x1 - 1, y2) + query(x1 - 1, y1 - 1);
-    }
-}
-```
-
-### 5、扫描线
-
-#### （1）[1094. 拼车](https://leetcode.cn/problems/car-pooling/)
-
-
-
-#### （2）[1851. 包含每个查询的最小区间](https://leetcode.cn/problems/minimum-interval-to-include-each-query/)
-
-
-
-#### （3）[850. 矩形面积 II](https://leetcode.cn/problems/rectangle-area-ii/)（结合线段树）
-
-**问题**
-
-给你一个轴对齐的二维数组 `rectangles` 。 对于 `rectangle[i] = [x1, y1, x2, y2]`，其中（x1，y1）是矩形 `i` 左下角的坐标， `(xi1, yi1)` 是该矩形 **左下角** 的坐标， `(xi2, yi2)` 是该矩形 **右上角** 的坐标。
-
-计算平面中所有 `rectangles` 所覆盖的 **总面积** 。任何被两个或多个矩形覆盖的区域应只计算 **一次** 。
-
-返回 ***总面积*** 。因为答案可能太大，返回 `10^9 + 7` 的 **模** 。
-
-例子
-
-<img src="https://s3-lc-upload.s3.amazonaws.com/uploads/2018/06/06/rectangle_area_ii_pic.png" alt="img" style="zoom: 33%;" />
-
-```
-输入：rectangles = [[0,0,2,2],[1,0,2,3],[1,0,3,1]]
-输出：6
-解释：如图所示，三个矩形覆盖了总面积为 6 的区域。
-从(1,1)到(2,2)，绿色矩形和红色矩形重叠。
-从(1,0)到(2,3)，三个矩形都重叠。
-```
-
-**数据范围**：
-
-- `1 <= rectangles.length <= 200`
-- `rectanges[i].length = 4`
-- `0 <= xi1, yi1, xi2, yi2 <= 10^9`
-
-**思路**：离散化+二分+线段树+扫描线，模板题
-
-```java
-class Segment {
-    int x, y1, y2;
-    int k;
-    public Segment(int x, int y1, int y2, int k) {
-        this.x = x;
-        this.y1 = y1;
-        this.y2 = y2;
-        this.k = k;
-    }
-}
-
-class Node {
-    int l, r;
-    int cnt, len;
-    public Node(int left, int right) {
-        l = left;
-        r = right;
-    }
-}
-
-class Solution {
-
-    final int N = 210, MOD = (int)1e9 + 7;
-    Segment[] segs;
-    Node[] tr;
-    int[] alls;
-
-    public int find(int[] a, int x) {
-        int l = 0, r = a.length;
-        while(l < r) {
-            int mid = l + r >> 1;
-            if(a[mid] >= x) r = mid;
-            else l = mid + 1;
-        }
-        return r; // 离散化到0,...
-    }
-
-    public int unique(int[] a, int st, int ed) {
-        int j = 0; // 不相同元素的个数
-        for(int i = st; i <= ed; i ++) 
-            if(i == 0 || a[i] != a[i - 1])
-                a[j ++] = a[i];
-        return st + j;
-    }
-
-    public void pushup(int u) { // 用u的孩子信息更新u
-        if(tr[u].cnt > 0) tr[u].len = alls[tr[u].r + 1] - alls[tr[u].l]; // 用u自己的信息更新
-        else if(tr[u].l == tr[u].r) tr[u].len = 0;
-        else tr[u].len = tr[u << 1].len + tr[u << 1 | 1].len; // 用孩子的信息更新u的信息
-    }
-
-    public void build(int u, int l, int r) {
-        tr[u] = new Node(l, r);
-        if(l == r) return ; // 叶子节点返回
-        int mid = l + r >> 1;
-        build(u << 1, l, mid); // 递归构建左右孩子
-        build(u << 1 | 1, mid + 1, r);
-    }
-
-    public void modify(int u, int l, int r, int k) {
-        if(tr[u].l >= l && tr[u].r <= r) { // 区间[tr[u].l, tr[u].r] 被包含在 [l, r] 中
-            tr[u].cnt += k;
-            pushup(u);
-        } else {
-            int mid = tr[u].l + tr[u].r >> 1;
-            if(l <= mid) modify(u << 1, l, r, k);
-            if(r > mid) modify(u << 1 | 1, l, r, k);
-            pushup(u);
-        }
-    }
-
-    public int rectangleArea(int[][] rectangles) {
-        int n = rectangles.length;
-        segs = new Segment[n * 2 + 10];
-        tr = new Node[n * 8 + 10];
-        alls = new int[n * 2];
-
-        int m = 0, idx = 0;
-        for(int i = 0; i < n; i ++ ) {
-            int x1 = rectangles[i][0], y1 = rectangles[i][1];
-            int x2 = rectangles[i][2], y2 = rectangles[i][3];
-            segs[m ++] = new Segment(x1, y1, y2, 1);
-            segs[m ++] = new Segment(x2, y1, y2, -1);
-            alls[idx ++] = y1; alls[idx ++] = y2;
-        }
-
-        Arrays.sort(segs, 0, m, (a, b) -> a.x - b.x);
-
-        Arrays.sort(alls); //sort
-        int ed = unique(alls, 0, alls.length - 1); // unique
-        alls = Arrays.copyOfRange(alls, 0, ed); // erase
-
-        build(1, 0, alls.length);
-
-        int res = 0;
-        for(int i = 0; i < m; i ++ ) {
-            if(i != 0) res = (int)((res + (long)tr[1].len * (segs[i].x - segs[i - 1].x)) % MOD);
-            modify(1, find(alls, segs[i].y1), find(alls, segs[i].y2) - 1, segs[i].k);
-        }
-        return res;
-    }
-}
-```
-
-#### （4）[218. 天际线问题](https://leetcode.cn/problems/the-skyline-problem/) （结合线段树+离散化）
-
-**问题**
-
-城市的 **天际线** 是从远处观看该城市中所有建筑物形成的轮廓的外部轮廓。给你所有建筑物的位置和高度，请返回 *由这些建筑物形成的 **天际线*** 。
-
-每个建筑物的几何信息由数组 `buildings` 表示，其中三元组 `buildings[i] = [lefti, righti, heighti]` 表示：
-
-- `lefti` 是第 `i` 座建筑物左边缘的 `x` 坐标。
-- `righti` 是第 `i` 座建筑物右边缘的 `x` 坐标。
-- `heighti` 是第 `i` 座建筑物的高度。
-
-你可以假设所有的建筑都是完美的长方形，在高度为 `0` 的绝对平坦的表面上。
-
-**天际线** 应该表示为由 “关键点” 组成的列表，格式 `[[x1,y1],[x2,y2],...]` ，并按 **x 坐标** 进行 **排序** 。**关键点是水平线段的左端点**。列表中最后一个点是最右侧建筑物的终点，`y` 坐标始终为 `0` ，仅用于标记天际线的终点。此外，任何两个相邻建筑物之间的地面都应被视为天际线轮廓的一部分。
-
-**注意：**输出天际线中不得有连续的相同高度的水平线。例如 `[...[2 3], [4 5], [7 5], [11 5], [12 7]...]` 是不正确的答案；三条高度为 5 的线应该在最终输出中合并为一个：`[...[2 3], [4 5], [12 7], ...]`.
-
-例子
-
-<img src="https://assets.leetcode.com/uploads/2020/12/01/merged.jpg" alt="img" style="zoom: 33%;" />
-
-```
-输入：buildings = [[2,9,10],[3,7,15],[5,12,12],[15,20,10],[19,24,8]]
-输出：[[2,10],[3,15],[7,12],[12,0],[15,10],[20,8],[24,0]]
-解释：
-图 A 显示输入的所有建筑物的位置和高度，
-图 B 显示由这些建筑物形成的天际线。图 B 中的红点表示输出列表中的关键点。
-```
-
-**数据范围：**
-
-- `1 <= buildings.length <= 10^4`
-- `0 <= lefti < righti <= 2^31 - 1`
-- `1 <= heighti <= 2^31 - 1`
-- `buildings` 按 `lefti` 非递减排序
-
-**思路**：**离散化+二分+线段树+扫描线**，模板题
-
-但是，需要注意一下两种类型用例
-
-<img src="https://raw.githubusercontent.com/JackFroster/Images/main/image/%E6%88%AA%E5%B1%8F2023-07-18%2021.30.01%E7%9A%84%E5%89%AF%E6%9C%AC.png" alt="截屏2023-07-18 21.30.01的副本" style="zoom: 20%;" />
-
-左边的用例的特点，两个高度相同的矩形相邻且不重叠；右边的用例的特点，两个高度不相同的矩形相邻且不重叠。
-
-```java
-class Segment {
-    int x, y1, y2;
-    int k;
-    public Segment(int x, int y1, int y2, int k) {
-        this.x = x;
-        this.y1 = y1;
-        this.y2 = y2;
-        this.k = k;
-    }
-}
-
-class Node {
-    int l, r;
-    int cnt, len;
-    public Node(int l, int r) {
-        this.l = l; this.r = r;
-    }
-}
-
-class Solution {
-    final int N = 10010;
-    Segment[] segs;
-    Node[] tr;
-    int[] alls;
-
-    public int unique(int[] a, int st, int ed) {
-        int j = 0;
-        for(int i = st; i <= ed; i ++)
-            if(i == 0 || a[i] != a[i - 1])
-                a[j ++] = a[i];
-        return st + j;
-    }
-
-    public int find(int[] a, int x) {
-        int l = 0, r = a.length - 1;
-        while(l < r) {
-            int mid = l + r >> 1;
-            if(a[mid] >= x) r = mid;
-            else l = mid + 1;
-        }
-        return r; // 映射到0,....
-    }
-
-    public void pushup(int u) {
-        if(tr[u].cnt > 0) tr[u].len = alls[tr[u].r + 1] - alls[tr[u].l];
-        else if(tr[u].l == tr[u].r) tr[u].len = 0;
-        else tr[u].len = tr[u << 1].len + tr[u << 1 | 1].len; 
-    }
-
-    public void build(int u, int l, int r) {
-        tr[u] = new Node(l, r);
-        if(l == r) return ;
-        int mid = l + r >> 1;
-        build(u << 1, l, mid);
-        build(u << 1 | 1, mid + 1, r);
-    }
-
-    public void modify(int u, int l, int r, int k) {
-        if(tr[u].l >= l && tr[u].r <= r) {
-            tr[u].cnt += k;
-            pushup(u);
-        } else {
-            int mid = tr[u].l + tr[u].r >> 1;
-            if(l <= mid) modify(u << 1, l, r, k);
-            if(mid < r) modify(u << 1 | 1, l, r, k);
-            pushup(u);
-        }
-    }
-
-    public List<List<Integer>> getSkyline(int[][] buildings) {
-        int n = buildings.length;
-        segs = new Segment[n * 2 + 10];
-        tr = new Node[n * 8 + 10];
-        alls = new int[n + 1];
-
-        int m = 0, idx = 1;
-        for(int i = 0; i < n; i ++) {
-            int x1 = buildings[i][0], y1 = 0;
-            int x2 = buildings[i][1], y2 = buildings[i][2];
-            segs[m ++] = new Segment(x1, y1, y2, 1);
-            segs[m ++] = new Segment(x2, y1, y2, -1);
-            alls[idx ++] = y2;
-        }
-
-        Arrays.sort(segs, 0, m, (a, b) -> (a.x - b.x));
-
-        Arrays.sort(alls); // sort
-        int ed = unique(alls, 0, alls.length - 1); // unique
-        alls = Arrays.copyOfRange(alls, 0, ed); // erase
-
-        build(1, 0, alls.length);
-
-        List<List<Integer>> res = new ArrayList<>();
-
-        int last = 0;
-        for(int i = 0; i < m; i ++) {
-            if(i != 0) {
-                if(segs[i].x != segs[i - 1].x && last != tr[1].len) {
-                    List<Integer> temp = new ArrayList<>();
-                    temp.add(segs[i - 1].x);
-                    temp.add(tr[1].len);
-                    res.add(temp);
-                    last = tr[1].len;
-                }
-            }
-            modify(1, find(alls, segs[i].y1), find(alls, segs[i].y2) - 1, segs[i].k);
-        }
-
-        List<Integer> temp = new ArrayList<>();
-        temp.add(segs[m - 1].x);
-        temp.add(0);
-        res.add(temp);
-        return res;
-    }
-}
-```
-
-### 6、最小生成树
-
-#### （1）1168. 水资源分配优化:writing_hand: 
-
-**问题**：
-
-村里面一共有 `n` 栋房子。我们希望通过建造水井和铺设管道来为所有房子供水。
-
-对于每个房子 `i`，我们有两种可选的供水方案：
-
-- 一种是直接在房子内建造水井，成本为 `wells[i]`；
-- 另一种是从另一口井铺设管道引水，数组 `pipes` 给出了在房子间铺设管道的成本，其中每个 `pipes[i] = [house1, house2, cost]` 代表用管道将 `house1` 和 `house2` 连接在一起的成本。当然，连接是双向的。
-
-请你帮忙计算为所有房子都供水的最低总成本。
-
-<img src="https://raw.githubusercontent.com/JackFroster/Images/main/image/202203121355256.png" alt="img" width="160" />
-
-**注意**：
-
-- `1 <= n <= 10000`
-- `wells.length == n`
-- `1 <= pipes.length <= 10000`
-- `1 <= pipes[i][0], pipes[i][1] <= n`
-- `pipes[i][0] != pipes[i][1]`
-
-**稀疏图**且**无自环**，重边不影响 `kruskal` 算法求最小生成树
-
-**思路**：`Kruskal `算法
-
-建立一个虚拟头结点，编号为0，可以连接到任何的房子，虚拟头结点0到结点`i`的边权`weight[i]`是挖水井的消耗`wells[i]`。
-
-因此就变成了一个非常普通的 `Kruskal` 问题，求最小生成树
-
-```java
-class Edge {
-    int a, b, w;
-    Edge(int a, int b, int w) {
-        this.a = a; this.b = b; this.w = w;
-    }
-}
-
-class Solution {
-
-    int[] p; // 并查集
-
-    public int find(int x) { // 返回x的祖宗结点
-        if(p[x] != x) p[x] = find(p[x]);
-        return p[x];
-    }
-
-    public int minCostToSupplyWater(int n, int[] wells, int[][] pipes) {
-        p = new int[n + 1]; // 加入一个虚拟结点, 编号为0, 房子编号从1开始
-        for(int i = 0; i < p.length; i ++) p[i] = i; // 初始化并查集
-
-        Edge[] edges = new Edge[n + pipes.length]; // 虚拟结点向每一个结点连一条边, 边权为wells[i]
-        int idx = 0;
-        for(int i = 0; i < wells.length; i ++) 
-            edges[idx ++] = new Edge(0, i + 1, wells[i]);
-        for(int i = 0; i < pipes.length; i ++)
-            edges[idx ++] = new Edge(pipes[i][0], pipes[i][1], pipes[i][2]);
-        
-        Arrays.sort(edges, (e1, e2) -> e1.w - e2.w); // 所有边按权值从小到大排序
-
-        int res = 0; // res生成树的最小边权
-        for(int i = 0; i < edges.length; i ++ ) { // 求最小生成树的边权之和 
-            int x = find(edges[i].a), y = find(edges[i].b);
-            if(x != y) {
-                p[x] = y;
-                res += edges[i].w;
-            }
-        }
-        return res;
-    }
-}
-```
-
-#### （2）1135. 最低成本联通所有城市
-
-问题：
-
-想象一下你是个城市基建规划者，地图上有 `n` 座城市，它们按以 `1` 到 `n` 的次序编号。
-
-给你整数 `n` 和一个数组 `conections`，其中 `connections[i] = [xi, yi, costi]` 表示将城市 `xi` 和城市 `yi` 连接所要的`costi`（**连接是双向的**）。
-
-返回连接所有城市的**最低成本**，每对城市之间**至少**有一条路径。如果无法连接所有 `n` 个城市，返回 `-1`
-
-该 **最小成本** 应该是所用全部连接成本的总和。
-
-<img src="https://raw.githubusercontent.com/JackFroster/Images/main/image/202203121404518.png" alt="img" width="150" />
-
-```
-输入：n = 3, conections = [[1,2,5],[1,3,6],[2,3,1]]
-输出：6
-```
-
-注意：
-
-- `1 <= n <= 10^4`
-- `1 <= connections.length <= 10^4`
-- `1 <= xi, yi <= n`
-- `xi != yi`
-
-稀疏图且无自环
-
-**思路**：`Kruskal` 算法，求最小生成树
-
-```java
-class Solution {
-
-    int[] p; // 并查集
-
-    public int find(int x){ // 返回x的祖宗结点
-        if(p[x] != x) p[x] = find(p[x]);
-        return p[x];
-    }
-
-    public int minimumCost(int n, int[][] connections) {
-        p  = new int[n + 1];
-        for(int i = 0; i < p.length; i ++) p[i] = i; // 初始化并查集
-
-        Arrays.sort(connections, (e1, e2) -> e1[2] - e2[2]); // 按权值从小到大排序所有的边
-
-        int res = 0, cnt = 0;
-        for(int i = 0; i < connections.length; i ++){
-            int x = find(connections[i][0]), y = find(connections[i][1]), w = connections[i][2];
-            if(x != y) { // 合并两个集合
-                p[x] = y;
-                res += w;
-                cnt ++ ;
-            }
-        }
-        if(cnt < n - 1) return -1; // 非连通图
-        return res;
-    }
-}
-```
-
-
-
-### 7、基环树
-
-#### （1）[2360. 图中的最长环 ](https://leetcode.cn/problems/longest-cycle-in-a-graph/) 
-
-**问题**
-
-给你一个 `n` 个节点的 **有向图** ，节点编号为 `0` 到 `n - 1` ，其中每个节点 **至多** 有一条出边。
-
-图用一个大小为 `n` 下标从 **0** 开始的数组 `edges` 表示，节点 `i` 到节点 `edges[i]` 之间有一条有向边。如果节点 `i` 没有出边，那么 `edges[i] == -1` 。
-
-请你返回图中的 **最长** 环，如果没有任何环，请返回 `-1` 。
-
-一个环指的是起点和终点是 **同一个** 节点的路径。
-
-例子
-
-![img](https://assets.leetcode.com/uploads/2022/06/08/graph4drawio-5.png)
-
-```
-输入：edges = [3,3,4,2,3]
-输出去：3
-解释：图中的最长环是：2 -> 4 -> 3 -> 2 。
-这个环的长度为 3 ，所以返回 3 。
-```
-
-**数据范围**：
-
-- `n == edges.length`
-- `2 <= n <= 10^5`
-- `-1 <= edges[i] < n`
-- `edges[i] != i`
-
-**思路**：
-
-```java
-class Solution {
-
-    int[] d; // d[i] 表示节点i的入度
-
-    public boolean topsort(int n, int ne[]) {
-        int[] q = new int[n + 10];
-        int hh = 0, tt = -1;
-
-        // 所有入度为0的节点入队列
-        for(int i = 0; i < n; i ++)
-            if(d[i] == 0)
-                q[++ tt] = i;
-    
-        while(hh <= tt) {
-            int t = q[hh ++];
-            if(ne[t] == -1) continue;
-            int j = ne[t];
-            d[j] --;
-            if(d[j] == 0) q[++ tt] = j;
-        }
-
-        return tt + 1 == n; // return true 表示该基环森林没有环
-    }
-
-    public int longestCycle(int[] edges) {
-        // edges 内向基环树, 每个点只发出一条有向边, edges[i]表示节点i指向 edges[i]的一条有向边
-        int n = edges.length;
-        
-        // 统计所有节点的入度
-        d = new int[n + 10];
-        for(int i = 0; i < n; i ++) {
-            int a = i, b = edges[i];
-            if(b == -1) continue;
-            d[b] ++;
-        }
-
-        if(topsort(n, edges)) return -1;
-
-        // 枚举基环森林中的所有环
-        int res = -1;
-        for(int start = 0; start < n; start ++) {
-            if(d[start] <= 0) continue;
-
-            int len = 0;
-            for(int i = start; ; i = edges[i]) {
-                d[i] = -1;
-                len ++;
-                if(edges[i] == start) break;
-            }
-            res = Math.max(res, len); // 最长的环
-        }
-
-        return res;
-    }
-}
-```
-
-#### （2）[2127. 参加会议的最多员工数](https://leetcode.cn/problems/maximum-employees-to-be-invited-to-a-meeting/)
-
-**问题**
-
-一个公司准备组织一场会议，邀请名单上有 `n` 位员工。公司准备了一张 **圆形** 的桌子，可以坐下 **任意数目** 的员工。
-
-员工编号为 `0` 到 `n - 1` 。每位员工都有一位 **喜欢** 的员工，每位员工 **当且仅当** 他被安排在喜欢员工的旁边，他才会参加会议。每位员工喜欢的员工 **不会** 是他自己。
-
-给你一个下标从 **0** 开始的整数数组 `favorite` ，其中 `favorite[i]` 表示第 `i` 位员工喜欢的员工。请你返回参加会议的 **最多员工数目** 。
-
-例子
-
-![img](https://assets.leetcode.com/uploads/2021/12/14/ex1.png)
-
-```
-输入：favorite = [2,2,1,2]
-输出：3
-解释：
-上图展示了公司邀请员工 0，1 和 2 参加会议以及他们在圆桌上的座位。
-没办法邀请所有员工参与会议，因为员工 2 没办法同时坐在 0，1 和 3 员工的旁边。
-注意，公司也可以邀请员工 1，2 和 3 参加会议。
-所以最多参加会议的员工数目为 3 。
-```
-
-**数据范围**：
-
-- `n == favorite.length`
-- `2 <= n <= 10^5`
-- `0 <= favorite[i] <= n - 1`
-- `favorite[i] != i`
-
-**思路**：
-
-```java
-class Solution {
-
-    int[] d; // d[i] 表示节点i的入度
-    ArrayList<Integer>[] rene; // 反图
-
-    public boolean topsort(int n, int[] ne) {
-        int[] q = new int[n + 10];
-        int hh = 0, tt = -1;
-        
-        // 所有入度为0的节点入队列
-        for(int i = 0; i < n; i ++)
-            if(d[i] == 0)
-                q[++ tt] = i;
-
-        while(hh <= tt) {
-            int t = q[hh ++];
-            int j = ne[t];
-            d[j] --;
-            if(d[j] == 0) q[++ tt] = j;
-        }
-
-        return tt + 1 == n; // return true 表示该基环森林没有环
-    }
-
-    // 在反图上遍历
-    public int rdfs(int u, int depth) { // 返回该内内向基环树中最长的树枝长度
-        if(rene[u] == null) return depth;;
-
-        int res = depth;
-        for(Integer v : rene[u])
-            if(d[v] == 0)
-                res = Math.max(res, rdfs(v, depth + 1));
-        return res;
-    }
-
-    public int maximumInvitations(int[] favorite) {
-        // favorite 内向基环树, 每个点只发出一条有向边, favorite[i]表示节点i指向favorite[i]的一条有向边
-        int n = favorite.length;
-
-        d = new int[n + 10];
-        rene = new ArrayList[n + 10];
-
-        for(int i = 0; i < n; i ++) {
-            int a = i, b = favorite[i];
-            d[b] ++ ;
-
-            if(rene[b] == null) rene[b] = new ArrayList<Integer>();
-            rene[b].add(a);
-        }
-
-        if(topsort(n, favorite)) return 0; // 没有环，直接返回0
-
-        int ans = 0, res = 0;
-        for(int start = 0; start < n; start ++) { // 枚举基环森林中的每一颗基环树
-            if(d[start] <= 0) continue;
-
-            // 收集内向基环树中环上的点
-            List<Integer> ring = new ArrayList<>(); // 存储环上的节点
-            for(int i = start; ; i = favorite[i]) {
-                d[i] = -1; // 标记
-                ring.add(i);
-                if(favorite[i] == start) break;
-            }
-
-            int len = ring.size();
-            if(len == 2) { // 基环树中的环如果有2个点
-                // 以环上的点为起点，向非环上的点遍历
-                for(Integer u : ring) 
-                    len += rdfs(u, 0); // 累加每个节点对应的最长树枝
-                res += len;
-            } else ans = Math.max(ans, len); // 基环树中的环如果有超过2个节点
-        }
-        ans = Math.max(ans, res);
-        return ans;
-    }
-}
-```
-
-#### （3）[2876. 有向图访问计数](https://leetcode.cn/problems/count-visited-nodes-in-a-directed-graph/)
-
-**问题**
-
-现有一个有向图，其中包含 `n` 个节点，节点编号从 `0` 到 `n - 1` 。此外，该图还包含了 `n` 条有向边。
-
-给你一个下标从 **0** 开始的数组 `edges` ，其中 `edges[i]` 表示存在一条从节点 `i` 到节点 `edges[i]` 的边。
-
-想象在图上发生以下过程：
-
-- 你从节点 `x` 开始，通过边访问其他节点，直到你在 **此过程** 中再次访问到之前已经访问过的节点。
-
-返回数组 `answer` 作为答案，其中 `answer[i]` 表示如果从节点 `i` 开始执行该过程，你可以访问到的不同节点数。
-
-例子
-
-![img](https://assets.leetcode.com/uploads/2023/08/31/graaphdrawio-1.png)
-
-```
-输入：edges = [1,2,0,0]
-输出：[3,3,3,4]
-解释：从每个节点开始执行该过程，记录如下：
-- 从节点 0 开始，访问节点 0 -> 1 -> 2 -> 0 。访问的不同节点数是 3 。
-- 从节点 1 开始，访问节点 1 -> 2 -> 0 -> 1 。访问的不同节点数是 3 。
-- 从节点 2 开始，访问节点 2 -> 0 -> 1 -> 2 。访问的不同节点数是 3 。
-- 从节点 3 开始，访问节点 3 -> 0 -> 1 -> 2 -> 0 。访问的不同节点数是 4 。
-```
-
-**数据范围**：
-
-- `n == edges.length`
-- `2 <= n <= 10^5`
-- `0 <= edges[i] <= n - 1`
-- `edges[i] != i`
-
-**思路**：
-
-```java
-class Solution {
-
-    int[] ne; // 内向基环树, 每个点只发出一条有向边, ne[i]表示i指向ne[i]的一条有向边
-    ArrayList<Integer>[] rene; // 反图
-    int[] d; // d[i] 表示节点i的入度,
-
-    public void topsort(int n) {
-        int[] q = new int[n + 10];
-        int hh = 0, tt = -1;
-
-        // 所有入度为0的节点入队列
-        for(int i = 0; i < n; i ++)
-            if(d[i] == 0)
-                q[++ tt] = i;
-
-        while(hh <= tt) {
-            int t = q[hh ++];
-            int j = ne[t];
-            d[j] --;
-            if(d[j] == 0) q[++ tt] = j;
-        }
-    }
-
-    // 在反图上遍历
-    public void rdfs(int u, int depth, int[] res) {
-        res[u] = depth;
-        if(rene[u] == null) return;
-        for(Integer v : rene[u])
-            if(d[v] == 0)
-                rdfs(v, depth + 1, res);
-    }
-
-
-    public int[] countVisitedNodes(List<Integer> edges) {
-        int n = edges.size();
-        
-        ne = new int[n + 10];
-        rene = new ArrayList[n + 10];
-        d = new int[n + 10];
-        
-        // 建图
-        for(int i = 0; i < n; i ++) {
-            int a = i, b = edges.get(i);
-            ne[a] = b; 
-
-            if(rene[b] == null) rene[b] = new ArrayList<Integer>();
-            rene[b].add(a);
-
-            d[b] ++ ;
-        }
-
-        // 拓扑排序, 剪枝
-        topsort(n);
-
-        int[] res = new int[n];
-
-        // 找环上的任意一点
-        for(int start = 0; start < n; start ++) {
-            if(d[start] <= 0) continue;
-
-            // 收集环上的点
-            List<Integer> ring = new ArrayList<>(); 
-            for(int i = start; ; i = ne[i]) {
-                d[i] = -1;
-                ring.add(i);
-                if(ne[i] == start) break;
-            }
-
-            // 以环上的点为起点，向非环上的点遍历
-            for(Integer u : ring) 
-                rdfs(u, ring.size(), res);
-        }
-
-        return res;
-    }
-}
-```
-
-
-
-
 
 
 
