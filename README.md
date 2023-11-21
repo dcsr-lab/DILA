@@ -4,7 +4,7 @@
 
 
 
-笔记工具使用 Typora 编写 Markdown.
+此 NoteBook For LeetCode (Version 1) 记录了LeetCode算法题解，包括**线段树、树状数组、数学、哈希计数、模拟、双指针、字符串、拓扑排序、排序、查找、树、前缀和与后缀和、动态规划（线性DP,树形DP,状态压缩DP,数位DP,状态机DP）、最短路、数论、贪心、Tire树、递归与回溯、链表、枚举、进制转换、单调栈、BFS、DFS、并查集、Topk问题、最大最小问题、最小最大问题、滑动窗口算法、二分、稀疏表、Tarjan 算法、FloodFill、Kadane's algorithm、KMP、扫描线**等。笔记工具使用 Typora 编写 Markdown。
 
 <div align="center">
 <div align="center">
@@ -29,7 +29,23 @@ $$ \Vert\vec{x}\Vert_1=\sum_{i=1}^N\vert{x_i}\vert $$
 
 
 
+### DILA Section I
 
+
+
+### DILA Section II
+
+
+
+### DILA Section III
+
+
+
+### DILA Section IV
+
+
+
+### DILA Section V
 
 
 

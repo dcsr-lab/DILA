@@ -613,11 +613,11 @@ class Solution {
 
 
 
+#### （11）[2934. 最大化数组末位元素的最少操作次数](https://leetcode.cn/problems/minimum-operations-to-maximize-last-elements-in-arrays/) :star:
 
 
 
-
-
+#### （12）[2216. 美化数组的最少删除数](https://leetcode.cn/problems/minimum-deletions-to-make-array-beautiful/)
 
 
 
