@@ -722,7 +722,106 @@ class Solution {
 }
 ```
 
-### 
+### 3、动态开点线段树
+
+#### （1）[933. 最近的请求次数](https://leetcode.cn/problems/number-of-recent-calls/)（单点修改和区间查询）
+
+**问题**
+
+写一个 `RecentCounter` 类来计算特定时间范围内最近的请求。
+
+请你实现 `RecentCounter` 类：
+
+- `RecentCounter()` 初始化计数器，请求数为 0 。
+- `int ping(int t)` 在时间 `t` 添加一个新请求，其中 `t` 表示以毫秒为单位的某个时间，并返回过去 `3000` 毫秒内发生的所有请求数（包括新请求）。确切地说，返回在 `[t-3000, t]` 内发生的请求数。
+
+**保证** 每次对 `ping` 的调用都使用比之前更大的 `t` 值。
+
+**数据范围**
+
+- `1 <= t <= 109`
+- 保证每次对 `ping` 调用所使用的 `t` 值都 **严格递增**
+- 至多调用 `ping` 方法 `104` 次
+
+**思路**
+
+```java
+class Node {
+    int l, r;
+    int sum;
+
+    public Node() {
+        l = r = sum = 0;
+    }
+}
+
+class RecentCounter {
+
+    Node[] tr = new Node[30*10000];
+    int idx = 1;
+    int root;
+
+    public int build() { // 构建一个线段树的结点
+        tr[idx] = new Node();
+        tr[idx].l = tr[idx].r = 0;
+        tr[idx].sum = 0;
+        return idx ++;
+    }
+
+    public void pushup(int u) {
+        tr[u].sum = tr[tr[u].l].sum + tr[tr[u].r].sum;
+    }
+
+    public void modify(int l, int r, int u, int x, int v) {
+        if(l == r) { // 叶子节点
+            tr[u].sum = v;
+            return ;
+        }
+        int mid = (l + r) >> 1;
+        if(x <= mid) {
+            if(tr[u].l == 0) tr[u].l = build();
+            modify(l, mid, tr[u].l, x, v);
+        }
+        else {
+            if(tr[u].r == 0) tr[u].r = build();
+            modify(mid + 1, r, tr[u].r, x, v);
+        }
+
+        pushup(u); // 用u的左右孩子节点更新当前节点
+    }
+
+    public int query(int l, int r, int u, int st, int ed) {
+        if(l >= st && r <= ed) return tr[u].sum; // [l,r]已经被包含在[st, ed]中时
+
+        int mid = (l + r) >> 1, ans = 0;
+        if(st <= mid) ans += query(l, mid, tr[u].l, st, ed);
+        if(ed > mid) ans += query(mid + 1, r, tr[u].r, st, ed);
+        return ans;
+    }
+
+    public RecentCounter() {
+        tr[0] = new Node();
+        root = build();
+    }
+    
+    public int ping(int t) {
+        modify(1, (int)1e9, root, t, 1);
+        return query(1, (int)(int)1e9, root, Math.max(t - 3000, 1), t);
+    }
+}
+
+/**
+ * Your RecentCounter object will be instantiated and called as such:
+ * RecentCounter obj = new RecentCounter();
+ * int param_1 = obj.ping(t);
+ */
+```
+
+#### （2）[729. 我的日程安排表 I](https://leetcode.cn/problems/my-calendar-i/)（区间修改和区间查询）
+
+#### （3）[731. 我的日程安排表 II](https://leetcode.cn/problems/my-calendar-ii/)
+
+#### （4）[732. 我的日程安排表 III](https://leetcode.cn/problems/my-calendar-iii/)
 
 
 

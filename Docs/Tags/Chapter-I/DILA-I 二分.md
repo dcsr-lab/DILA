@@ -13,7 +13,107 @@
 
 # 第一部分之二分
 
-### 1、二分
+### 1、二段性
+
+#### （1）[162. 寻找峰值](https://leetcode.cn/problems/find-peak-element/)
+
+**问题**
+
+峰值元素是指其值**严格大于左右相邻值**的元素。
+
+给你一个整数数组 `nums`，找到峰值元素并**返回其索引**。数组可能包含多个峰值，在这种情况下，返回 **任何一个峰值** 所在位置即可。
+
+你可以假设 `nums[-1] = nums[n] = -∞` 。
+
+你必须实现时间复杂度为 `O(log n)` 的算法来解决此问题。
+
+**数据范围**
+
+- `1 <= nums.length <= 1000`
+- `-2^31 <= nums[i] <= 2^31 - 1`
+- 对于所有有效的 `i` 都有 `nums[i] != nums[i + 1]`
+
+**思路**
+
+题目让我们实现一个 $O(logn)$ 算法，这是对使用「二分」的强烈暗示。
+
+和往常的题目一样，**我们应当从是否具有「二段性」来考虑是否可以进行「二分」**。
+
+不难发现，**如果** 在确保有解的情况下，我们可以根据当前的分割点 $mid$ 与左右元素的大小关系来指导 $l$ 或者 $r$ 的移动。
+
+假设当前分割点 $mid$ 满足关系 $num[mid]>nums[mid+1]$ 的话，一个很简单的想法是 $num[mid]$ 可能为峰值，而 $nums[mid+1]$ 必然不为峰值，于是让 $r=mid$，从左半部分继续找峰值。
+
+上述只能说做法对了，分析没对。
+
+
+
+上述做法正确的前提有两个：
+
+1. 对于任意数组而言，一定存在峰值（一定有解）；
+2. 二分不会错过峰值。
+
+
+
+我们分别证明一下。
+
+**证明 1 ：对于任意数组而言，一定存在峰值（一定有解）**
+
+根据题意，我们有「数据长度至少为 1」、「越过数组两边看做负无穷」和「相邻元素不相等」的起始条件。
+
+我们可以根据数组长度是否为 1 进行分情况讨论：
+
+1. 数组长度为 1，由于边界看做负无穷，此时峰值为该唯一元素的下标；
+2. 数组长度大于 1，从最左边的元素 $nums[0]$ 开始出发考虑：
+   - 如果 $nums[0]>nums[1]$，那么最左边元素 $nums[0]$ 就是峰值（结合左边界为负无穷）；
+
+   - 如果 $nums[0]<nums[1]$，由于已经存在明确的 $nums[0]$ 和 $nums[1]$ 大小关系，我们将 $nums[0]$ 看做边界， $nums[1]$ 看做新的最左侧元素，继续往右进行分析：
+     - 如果在到达数组最右侧前，出现 $nums[i]>nums[i+1]$，说明存在峰值位置 $i$（当我们考虑到 $nums[i]$，必然满足 $nums[i]$ 大于前一元素的前提条件，当然前一元素可能是原始左边界）；
+     - 到达数组最右侧，还没出现 $nums[i]>nums[i+1]$，说明**数组严格递增**。此时结合右边界可以看做负无穷，可判定 $nums[n−1]$ 为峰值。
+
+
+**综上，我们证明了无论何种情况，数组必然存在峰值。**
+
+**证明 2 ：二分不会错过峰值**
+
+其实基于「证明 1」，我们很容易就可以推理出「证明 2」的正确性。
+
+
+
+整理一下由「证明 1」得出的推理：**如果当前位置大于其左边界或者右边界，那么在当前位置的右边或左边必然存在峰值。**
+
+换句话说，对于一个满足 $nums[x]>nums[x−1]$ 的位置，$x$ 的右边一定存在峰值；或对于一个满足 $nums[x]>nums[x+1]$ 的位置，$x$ 的左边一定存在峰值。
+
+因此这里的「二段性」其实是指：**在以 $mid$ 为分割点的数组上，根据 $nums[mid]$ 与 $nums[mid±1] $的大小关系，可以确定其中一段满足「必然有解」，另外一段不满足「必然有解」（可能有解，可能无解）。**
+
+**至此，我们证明了始终选择大于边界一端进行二分，可以确保选择的区间一定存在峰值，并随着二分过程不断逼近峰值位置。**
+
+
+
+```java
+class Solution {
+    public int findPeakElement(int[] nums) {
+        int n = nums.length;
+        int[] arr = new int[n + 2];
+
+        for(int i = 1; i <= n; i ++)
+            arr[i] = nums[i - 1];
+        arr[0] = arr[n + 1] = Integer.MIN_VALUE;
+        
+        int l = 1, r = nums.length;
+        while(l < r) {
+            int mid = (l + r) >> 1;
+            if(arr[mid] > arr[mid + 1]) r = mid;
+            else l = mid + 1;
+        }
+
+        return r - 1;
+    }
+}
+```
+
+
+
+### 2、二分
 
 #### （1）[1170. 比较字符串最小字母出现频次](https://leetcode.cn/problems/compare-strings-by-frequency-of-the-smallest-character/)
 
@@ -519,6 +619,84 @@ class Solution {
 
 
 #### （10）[2258. 逃离火灾](https://leetcode.cn/problems/escape-the-spreading-fire/)（二分+二次BFS）
+
+
+
+#### （11）[33. 搜索旋转排序数组](https://leetcode.cn/problems/search-in-rotated-sorted-array/)（二次二分）
+
+**问题**
+
+整数数组 `nums` 按升序排列，数组中的值 **互不相同** 。
+
+在传递给函数之前，`nums` 在预先未知的某个下标 `k`（`0 <= k < nums.length`）上进行了 **旋转**，使数组变为 `[nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]]`（下标 **从 0 开始** 计数）。
+
+例如， `[0,1,2,4,5,6,7]` 在下标 `3` 处经旋转后可能变为 `[4,5,6,7,0,1,2]` 。
+
+给你 **旋转后** 的数组 `nums` 和一个整数 `target` ，如果 `nums` 中存在这个目标值 `target` ，则返回它的下标，否则返回 `-1` 。
+
+你必须设计一个时间复杂度为 `O(log n)` 的算法解决此问题。
+
+**数据范围**
+
+- `1 <= nums.length <= 5000`
+- `-104 <= nums[i] <= 10^4`
+- `nums` 中的每个值都 **独一无二**
+- 题目数据保证 `nums` 在预先未知的某个下标上进行了旋转
+- `-104 <= target <= 10^4`
+
+**思路**
+
+两次二分，第一次二分寻找**旋转点**，第二次二分寻找目标值。
+
+```java
+class Solution {
+
+    public int bsearch(int[] a, int l, int r, int x) {
+        while(l < r) {
+            int mid = l + r + 1 >> 1;
+            if(a[mid] > x) r = mid - 1;
+            else l = mid;
+        }
+        return a[l] == x ? l : -1;
+    }
+
+    public int find(int[] a) {
+        int l = 0, r = a.length - 1;
+        while(l < r) {
+            int mid = l + r + 1 >> 1;
+            if(a[mid] >= a[l] && a[mid] >= a[r]) l = mid; // [l,r]跨越左右边 mid在左半边
+            else if(a[mid] <= a[l] && a[mid] <= a[r]) r = mid - 1; // [l,r]跨越左右边,mid在右半边
+            else l = mid; // [l,r]只在左半边
+        }
+        return l;
+    }
+
+    public int search(int[] nums, int target) {
+        // 二次二分
+        int n = nums.length;
+
+        int l = 0, r = n - 1;
+        
+        if(nums[0] > nums[n - 1]) {  
+            int t = find(nums); // 第一次二分寻找旋转中心
+            if(target >= nums[0] && target <= nums[t]) r = t; // 根据target更新二分区间
+            else l = t + 1;
+        }
+
+        return bsearch(nums, l , r, target); // num[l, r] 元素按升序排列
+    }
+}
+```
+
+
+
+#### （12）[81. 搜索旋转排序数组 II](https://leetcode.cn/problems/search-in-rotated-sorted-array-ii/)（二次二分）
+
+
+
+#### （13）[153. 寻找旋转排序数组中的最小值](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/)
+
+
 
 
 

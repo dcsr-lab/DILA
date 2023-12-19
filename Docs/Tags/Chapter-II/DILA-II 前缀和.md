@@ -537,7 +537,131 @@ class Solution {
 }
 ```
 
-### 
+#### 9、[523. 连续的子数组和](https://leetcode.cn/problems/continuous-subarray-sum/)（前缀和+哈希）
+
+**问题**
+
+给你一个整数数组 `nums` 和一个整数 `k` ，编写一个函数来判断该数组是否含有同时满足下述条件的连续子数组：
+
+- 子数组大小 **至少为 2** ，且
+- 子数组元素总和为 `k` 的倍数。
+
+如果存在，返回 `true` ；否则，返回 `false` 。
+
+如果存在一个整数 `n` ，令整数 `x` 符合 `x = n * k` ，则称 `x` 是 `k` 的一个倍数。`0` 始终视为 `k` 的一个倍数。
+
+**数据范围**
+
+- `1 <= nums.length <= 10^5`
+- `0 <= nums[i] <= 10^9`
+- `0 <= sum(nums[i]) <= 2^31 - 1`
+- `1 <= k <= 2^31 - 1`
+
+**思路**
+
+设前缀和数组为 `int[] s`。则 子数组 $(i,j]$的和为 $s[j]-s[i]$。
+
+子数组元素 $(i,j]$ 总和为 `k` 的倍数，即 $(s[j]-s[i])\%k=0$ ，等价于 $(s[j]\%k=s[i]\%k)$。
+
+```java
+class Solution {
+
+    public int getMod(int a, int b){
+        return a % b;
+    }
+
+    public boolean checkSubarraySum(int[] nums, int k) {
+        if(nums.length < 2) return false;
+        int n = nums.length;
+        HashMap<Integer, Integer> hash = new HashMap<>();
+        int[] s = new int[n + 10];
+
+        hash.put(getMod(s[0], k), 0);
+        for(int i = 1; i <= n; i ++){
+            s[i] = s[i - 1] + nums[i - 1];
+
+            int mod = getMod(s[i], k);
+            if(hash.containsKey(mod)){
+                if(i - hash.get(mod) >= 2) return true;
+            } else hash.put(mod, i);
+        }
+        return false;
+    }
+}
+```
+
+#### 10、[525. 连续数组](https://leetcode.cn/problems/contiguous-array/)（前缀和+哈希）
+
+**问题**
+
+给定一个二进制数组 `nums` , 找到含有相同数量的 `0` 和 `1` 的最长连续子数组，并返回该子数组的长度。
+
+**数据范围**
+
+- `1 <= nums.length <= 10^5`
+- `nums[i]` 不是 `0` 就是 `1`
+
+**思路**
+
+把 $0$ 视作$-1$，把$1$是作 $1$。
+
+找到含有相同数量的 `0` 和 `1` 的子数组。就等价于：找到一个和为 $0$ 的连续子数组。注意这种子数组的长度一定是偶数，因为$0$和$1$的个数相等。
+
+设前缀和数组为 `int[] s`。则 子数组 $(i,j]$的和为 $s[j]-s[i]$。
+
+找到含有相同数量的 `0` 和 `1` 的连续子数组$(i,j]$，即 $(s[j]-s[i])=0$ ，等价于 $(s[j]=s[i])$。
+
+```java
+class Solution {
+    public int findMaxLength(int[] nums) {
+        int n = nums.length;
+
+        int res = 0;
+
+        int[] s = new int[n + 1];
+        Map<Integer, Integer> map = new HashMap<>(); // value是key出现的最早的下标
+
+        map.put(0, 0); // 加入一个哨兵
+
+        for(int i = 1; i <= n; i ++) {
+            int x = (nums[i - 1] == 0 ? -1 : 1);
+            s[i] = s[i - 1] + x;
+
+            if(map.containsKey(s[i])) {
+                int t = map.get(s[i]);
+                res = Math.max(res, i - t);
+            }
+            else map.put(s[i], i);
+        }
+
+        return res;
+    }
+}
+```
+
+#### 11、[1590. 使数组和能被 P 整除](https://leetcode.cn/problems/make-sum-divisible-by-p/)
+
+
+
+
+
+#### 12、[974. 和可被 K 整除的子数组](https://leetcode.cn/problems/subarray-sums-divisible-by-k/)
+
+
+
+#### 13、[560. 和为 K 的子数组](https://leetcode.cn/problems/subarray-sum-equals-k/)
+
+
+
+#### 14、[930. 和相同的二元子数组](https://leetcode.cn/problems/binary-subarrays-with-sum/)
+
+
+
+#### 15、[面试题 17.05. 字母与数字](https://leetcode.cn/problems/find-longest-subarray-lcci/)
+
+
+
+#### 16、[930. 和相同的二元子数组](https://leetcode.cn/problems/binary-subarrays-with-sum/)
 
 
 

@@ -1,4 +1,4 @@
-# |Dive Into LeetCode’s Algorithm
+# Dive Into LeetCode’s Algorithm
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/JackFroster/Images/main/image/Screenshot%202023-11-17%20at%2013.04.48.png" alt="Screenshot 2023-11-17 at 13.04.48" width = "200px" align= "center"/>
@@ -292,11 +292,11 @@ class Solution {
 //  [0,0,2,-1]]
 ```
 
+#### （2）[1457. 二叉树中的伪回文路径](https://leetcode.cn/problems/pseudo-palindromic-paths-in-a-binary-tree/)
 
 
 
-
-
+#### （3）[1466. 重新规划路线](https://leetcode.cn/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/)
 
 
 

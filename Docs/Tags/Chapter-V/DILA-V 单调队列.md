@@ -15,7 +15,9 @@
 
 
 
-#### 1、[239. 滑动窗口最大值](https://leetcode.cn/problems/sliding-window-maximum/)（单减队列）
+#### 1、单调队列
+
+##### （1）[239. 滑动窗口最大值](https://leetcode.cn/problems/sliding-window-maximum/)（单减队列）
 
 **问题**：
 
@@ -69,7 +71,7 @@ class Solution {
 }
 ```
 
-#### 2、[1499. 满足不等式的最大值](https://leetcode.cn/problems/max-value-of-equation/) （单减队列）
+##### （2）[1499. 满足不等式的最大值](https://leetcode.cn/problems/max-value-of-equation/) （单减队列）
 
 **问题**：
 
@@ -144,6 +146,90 @@ class Solution {
             q[++ tt] = i;
         }
         return res;
+    }
+}
+```
+
+
+
+#### 2、单调队列优化DP
+
+##### （1）[2944. 购买水果需要的最少金币数](https://leetcode.cn/problems/minimum-number-of-coins-for-fruits/)
+
+**问题**
+
+
+
+思路
+
+```java
+class Solution {
+    public int minimumCoins(int[] prices) {
+        // f[i] 表示获得[i,n]内所有苹果的最小值
+        // f[i] = price[i] + f[j],  i+1 <= j <= i+i
+
+        int n = prices.length;
+
+        int[] f = new int[n + 10];
+        f[n] = prices[n - 1];
+        for(int i = n - 1; i >= 1; i --) {
+            
+            if(i + i >= n) {
+                f[i] = prices[i - 1];
+                continue;
+            }
+
+            int t = 0x3f3f3f3f;
+            for(int j = i + 1; j <= i + 1 + i; j ++)
+                t = Math.min(t, f[j]);
+            f[i] = prices[i - 1] + t;
+        }
+
+        return f[1];
+    }
+}
+```
+
+单调递增队列维护不定长滑动窗口最小值优化二重循环
+
+```java
+class Solution {
+    public int minimumCoins(int[] prices) {
+        // f[i] 表示获得[i,n]内所有苹果的最小值
+        // f[i] = price[i] + f[j],  i+1 <= j <= i+i
+
+        int n = prices.length;
+        int[] f = new int[n + 10];
+        
+        // for(int i = n; i >= 1; i --) {
+            
+        //     if(i + i >= n) {
+        //         f[i] = prices[i - 1];
+        //         continue;
+        //     }
+
+        //     int t = 0x3f3f3f3f;
+        //     for(int j = i + 1; j <= i + 1 + i; j ++)
+        //         t = Math.min(t, f[j]);
+        //     f[i] = prices[i - 1] + t;
+        // }
+
+        // 单调递增队列优化二重循环
+        int[] q = new int[n + 10];
+        int hh = 0, tt = -1;
+
+        for(int i = n; i >= 1; i --) { // 滑动窗口从右往左滑
+            while(hh <= tt && i + 1 + i < q[hh]) hh ++; // 判断队头元素是否滑出窗口
+            
+            if(i + i >= n) f[i] = prices[i - 1];
+            else f[i] = prices[i - 1] + f[q[hh]]; // 队头元素就是当前滑动窗口的最小值f[q[hh]]
+            
+            while(hh <= tt && q[tt] <= i + i - 1 && f[q[tt]] >= f[i]) tt --; // 入队
+
+            q[++ tt] = i;
+        }
+
+        return f[1];
     }
 }
 ```

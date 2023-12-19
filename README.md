@@ -31,26 +31,26 @@ $$ \Vert\vec{x}\Vert_1=\sum_{i=1}^N\vert{x_i}\vert $$
 
 # DILA-Tags
 
-##### [DILA Chapter I](./Doc/Tags/Chapter-I)
+##### [DILA Chapter I](./Docs/Tags/Chapter-I)
 
 - 二分、双指针、哈希表、字符串、排序查找、枚举、栈、模拟、进制转换、递归回溯、链表
 
-##### [DILA Chapter II](./Doc/Tags/Chapter-II)
+##### [DILA Chapter II](./Docs/Tags/Chapter-II)
 
 - BFS、DFS、FloodFill、拓扑排序、前后缀分解、前缀和、差分、并查集、归并、思维题、数学、数论
 
 
-##### [DILA Chapter III](./Doc/Tags/Chapter-III)
+##### [DILA Chapter III](./Docs/Tags/Chapter-III)
 
 - KMP、Spare Table、Tarjan 算法、TopK问题、区间合并、最大最小值问题、最短路、滑动窗口
 
 
-##### [DILA Chapter IV](./Doc/Tags/Chapter-IV)
+##### [DILA Chapter IV](./Docs/Tags/Chapter-IV)
 
 - Tire树、基环树、最小生成树、树、树状数组、线段树
 
 
-##### [DILA Chapter V](./Doc/Tags/Chapter-V)
+##### [DILA Chapter V](./Docs/Tags/Chapter-V)
 
 - DP、贪心、单调栈、单调队列、优先队列、容斥原理
 
@@ -58,8 +58,10 @@ $$ \Vert\vec{x}\Vert_1=\sum_{i=1}^N\vert{x_i}\vert $$
 
 # DILA-Sword Means Offer
 
-- [剑指 Offer (专项突破)](./Doc/Sword%20Means%20Offer/剑指%20Offer(专项突破)算法笔记(Java版).md)
-- [剑指 Offer (第二版)](./Doc/Sword%20Means%20Offer/剑指%20Offer(第二版)算法笔记(Java版).md)
+- [剑指 Offer (专项突破)](./Docs/Sword%20Means%20Offer/剑指%20Offer(专项突破)算法笔记(Java版).md)
+- [剑指 Offer (第二版)](./Docs/Sword%20Means%20Offer/剑指%20Offer(第二版)算法笔记(Java版).md)
+
+
 
 ### License
 

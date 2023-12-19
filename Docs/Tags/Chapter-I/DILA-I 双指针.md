@@ -923,6 +923,10 @@ class Solution {
 
 
 
+#### （15）[2216. 美化数组的最少删除数](https://leetcode.cn/problems/minimum-deletions-to-make-array-beautiful/)
+
+
+
 
 
 ### :mag_right: 参考文献 

@@ -144,6 +144,20 @@ class Solution {
 
 
 
+#### （4）[2926. 平衡子序列的最大和](https://leetcode.cn/problems/maximum-balanced-subsequence-sum/)
+
+
+
+#### （5）[2407. 最长递增子序列 II](https://leetcode.cn/problems/longest-increasing-subsequence-ii/)
+
+
+
+
+
+#### （6）[2736. 最大和查询](https://leetcode.cn/problems/maximum-sum-queries/)
+
+
+
 ### 2、离散化——树状数组
 
 #### （1）剑指 Offer 51. 数组中的逆序对:writing_hand: 

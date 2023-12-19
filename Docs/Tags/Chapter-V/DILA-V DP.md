@@ -839,6 +839,154 @@ class Solution {
 }
 ```
 
+
+
+#### （16）[828. 统计子串中的唯一字符](https://leetcode.cn/problems/count-unique-characters-of-all-substrings-of-a-given-string/)（哈希表）
+
+**问题**
+
+我们定义了一个函数 `countUniqueChars(s)` 来统计字符串 `s` 中的唯一字符，并返回唯一字符的个数。
+
+例如：`s = "LEETCODE"` ，则其中 `"L"`, `"T"`,`"C"`,`"O"`,`"D"` 都是唯一字符，因为它们只出现一次，所以 `countUniqueChars(s) = 5` 。
+
+本题将会给你一个字符串 `s` ，我们需要返回 `countUniqueChars(t)` 的总和，其中 `t` 是 `s` 的子字符串。输入用例保证返回值为 32 位整数。
+
+注意，某些子字符串可能是重复的，但你统计时也必须算上这些重复的子字符串（也就是说，你必须统计 `s` 的所有子字符串中的唯一字符）。
+
+**数据范围**
+
+- `1 <= s.length <= 10^5`
+- `s` 只包含大写英文字符
+
+**思路**
+
+题目要求给定字符串的所有**子字符串**的**唯一**字符的个数。
+
+定义数组 `int[] f`, 其中 $f[i]$ 表示 字符$s[i]$ 只出现一次的所有子字符串的集合。其属性是集合元素的个数。$f[i]$的值表示了字符$s[i]$对唯一字符的个数的贡献值。
+
+如何快速($O(n)$)求出 $f[i]$？
+
+可以预处理出两个数组，一个 `int[] pre`，另一个是`int[] post`。其中，$pre[i]$表示在其左边第一次出现的位置，$post[i]$ 表示在其右边第一次出现的位置。
+
+那么，$f[i] = (i - pre[i]) * (post[i] - i)$。
+
+注意，初始化 $ pre[i] = 0,post[i] = n + 1$。数组从下标$1$开始枚举。
+
+```java
+class Solution {
+    public int uniqueLetterString(String s) {
+        int n = s.length();
+        int[] f = new int[n + 1]; // 
+
+        HashMap<Integer, Integer> map = new HashMap<>();
+
+        int[] pre = new int[n + 1];
+        int[] post = new int[n + 1];
+
+        for(int i = 1; i <= n; i ++) {
+            pre[i] = 0;
+            post[i] = n + 1;
+        }
+
+        for(int i = 1; i <=n; i ++) {
+            int t = map.getOrDefault(s.charAt(i - 1) - 'A', 0);
+            if(t != 0) {
+                pre[i] = t;
+                post[t] = i;
+            }
+            map.put(s.charAt(i - 1) - 'A', i);
+        }
+
+        for(int i = 1; i <= n; i ++) 
+            f[i] = (i - pre[i]) * (post[i] - i);
+
+        int res = 0;
+        for(int i = 1; i <= n; i ++)
+            res += f[i];
+
+        return res;
+    }
+}
+```
+
+
+
+#### （17）[907. 子数组的最小值之和](https://leetcode.cn/problems/sum-of-subarray-minimums/)（单增栈）
+
+**问题**
+
+给定一个整数数组 `arr`，找到 `min(b)` 的总和，其中 `b` 的范围为 `arr` 的每个（连续）子数组。
+
+由于答案可能很大，因此 **返回答案模 `10^9 + 7`** 。
+
+**数据范围**
+
+- `1 <= arr.length <= 3 * 10^4`
+- `1 <= arr[i] <= 3 * 10^4`
+
+**思路**
+
+题目要求求出一个整数数组的所有子数组的最小值的总和。
+
+定义数组 `int[] f`, 其中$f[i]$ 表示以$arr[i]$为最小值的所有子数组构成的集合。其属性是集合元素的个数 $\times arr[i]$ 
+
+那么，`f`数组之和就是我们要求的答案。
+
+如何快速($O(n)$)求出以$arr[i]$为最小值的所有子数组的构成的集合？
+
+可以考虑使用「单调栈」。单增栈可以快速求出每一个元素其最左边（或最右边）第一个比其小的元素。
+
+不妨记当前元素为 $arr[i]$，那么其左边第一个比$arr[i]$小的元素的索引位置记为$j$，其右边第一个比$arr[i]$小的元素记为$k$。
+
+所以，$[j+1,i-1]$ 和$[i + 1,k-1]$区间中的所有元素都比$arr[i]$大。
+
+可知，以$arr[i]$为最小值的所有子数组构成的集合的元素格式为 $(i - j)\times(k-i)$。
+
+注意，需要设置哨兵，$j$ 默认初始化为$-1$, $k$ 默认初始化为 $n$。数组从下标$0$开始枚举。
+
+```c++
+class Solution {
+    public int sumSubarrayMins(int[] arr) {
+        int n = arr.length;
+
+        int mod = (int)1e9 + 7;
+
+        int[] stk = new int[n + 10];
+        int tt = 0;
+
+        int[] l = new int[n]; // l[i] 表示arr[i]左边第一个比arr[i]小的元素的索引
+        int[] r = new int[n]; // r[i] 表式arr[i]右边第一个比arr[i]小的元素的索引
+
+        for(int i = 0; i < n; i ++) {
+            while(tt != 0 && arr[stk[tt]] > arr[i]) tt --; // [71,55,82,55], 因为存在重复元素的原因, 重复计算子数组, 两次单调栈只取一次等号即可
+            if(tt != 0) l[i] = stk[tt];
+            else l[i] = -1;
+            stk[++ tt] = i;
+        }
+
+        tt = 0;
+        for(int i = n - 1; i >= 0; i --) {
+            while(tt != 0 && arr[stk[tt]] >= arr[i]) tt --;
+            if(tt != 0) r[i] = stk[tt];
+            else r[i] = n;;
+            stk[++ tt] = i;
+        }
+
+        long [] f = new long[n];
+        for(int i = 0; i < n; i ++)
+            f[i] = (((long)(i - l[i]) * (r[i] - i)) % mod * (long)arr[i]) % mod;
+
+        long res = 0;
+        for(int i = 0; i < n; i ++)
+            res = (res + f[i]) % mod;
+        
+        return (int) res;
+    }
+}
+```
+
+
+
 ### 2、树形DP
 
 #### （1）[1130. 叶值的最小代价生成树](https://leetcode.cn/problems/minimum-cost-tree-from-leaf-values/)（树形DP+递归）
@@ -1070,6 +1218,12 @@ class Solution {
 
 
 
+
+#### （6）[2304. 网格中的最小路径代价](https://leetcode.cn/problems/minimum-path-cost-in-a-grid/)
+
+
+
+#### （7）[2925. 在树上执行操作以后得到的最大分数](https://leetcode.cn/problems/maximum-score-after-applying-operations-on-a-tree/)
 
 
 
@@ -2081,6 +2235,8 @@ class Solution {
 
 
 #### （2）[2407. 最长递增子序列 II](https://leetcode.cn/problems/longest-increasing-subsequence-ii/)
+
+
 
 
 
